@@ -1,6 +1,9 @@
 import { NextResponse } from "next/server";
 import { jobService } from "@/modules/workflow";
 
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+
 interface RouteContext {
   params: Promise<{ id: string }>;
 }
@@ -18,7 +21,14 @@ export async function GET(_request: Request, context: RouteContext) {
       );
     }
 
-    return NextResponse.json({ success: true, data: job });
+    return NextResponse.json(
+      { success: true, data: job },
+      {
+        headers: {
+          "Cache-Control": "no-store",
+        },
+      },
+    );
   } catch (error) {
     const message =
       error instanceof Error ? error.message : "생성 작업을 불러오지 못했습니다.";

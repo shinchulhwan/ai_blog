@@ -6,13 +6,20 @@ import "../register-workflows";
 import { workflowEngine } from "../engine/workflow-engine";
 import { jobService } from "./job.service";
 import type { JobProgressUpdate } from "@/types/job";
+import { DEFAULT_BLOG_WRITING_STYLE, type BlogWritingStyle } from "@/types/blog-style";
+import { resolveWritingStylePrompt } from "@/lib/prompts/writing-styles";
 import type { AutoPublishWorkflowResult } from "../workflows/auto-publish.steps";
+
+export interface JobRunOptions {
+  writingStyle?: BlogWritingStyle;
+}
 
 export interface JobRunResult {
   jobId: string;
   historyId: string;
   researchId: string;
   result: BlogFullResponse;
+  publishUrl?: string | null;
 }
 
 async function resolveScheduleRunId(scheduleId: string): Promise<string | undefined> {
@@ -20,7 +27,10 @@ async function resolveScheduleRunId(scheduleId: string): Promise<string | undefi
   return runs.find((run) => run.status === "RUNNING")?.id;
 }
 
-export async function runGenerationJob(jobId: string): Promise<JobRunResult> {
+export async function runGenerationJob(
+  jobId: string,
+  options: JobRunOptions = {},
+): Promise<JobRunResult> {
   const job = await jobService.getById(jobId);
 
   if (!job) {
@@ -53,6 +63,10 @@ export async function runGenerationJob(jobId: string): Promise<JobRunResult> {
       scheduleRunId = await resolveScheduleRunId(job.scheduleId);
     }
 
+    const writingStyle = options.writingStyle ?? DEFAULT_BLOG_WRITING_STYLE;
+    const stylePrompt = resolveWritingStylePrompt(writingStyle);
+    const mergedCustomPrompt = [customPrompt, stylePrompt].filter(Boolean).join("\n\n");
+
     const workflowResult = await workflowEngine.run<void, AutoPublishWorkflowResult>(
       "auto-publish",
       undefined,
@@ -63,7 +77,7 @@ export async function runGenerationJob(jobId: string): Promise<JobRunResult> {
         jobId,
         scheduleId: job.scheduleId ?? undefined,
         scheduleRunId,
-        customPrompt,
+        customPrompt: mergedCustomPrompt || undefined,
         onProgress,
       },
     );
@@ -79,6 +93,7 @@ export async function runGenerationJob(jobId: string): Promise<JobRunResult> {
       historyId: workflowResult.historyId,
       researchId: workflowResult.researchId,
       result: workflowResult.result,
+      publishUrl: workflowResult.publishOutput?.url?.trim() || null,
     };
   } catch (error) {
     const message = getKoreanErrorMessage(error);

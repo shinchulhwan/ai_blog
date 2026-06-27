@@ -170,7 +170,13 @@ export class PublishManager implements NaverManager {
 
     try {
       if (mock) {
-        return await this.publishMock(input, startedAt, retryCount);
+        if (process.env.NAVER_ALLOW_MOCK === "true") {
+          return await this.publishMock(input, startedAt, retryCount);
+        }
+
+        throw new NaverPublishFailedError(
+          "Mock publish is disabled. Set NAVER_BROWSER_MODE=playwright and provide NAVER_USERNAME, NAVER_PASSWORD, NAVER_SESSION_SECRET.",
+        );
       }
 
       return await this.publishPlaywright(input, startedAt, retryCount);

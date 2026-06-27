@@ -46,6 +46,7 @@ loadEnvFile(".env");
 async function main() {
   process.env.IMAGE_PROVIDER ??= "mock";
   process.env.NAVER_SESSION_SECRET ??= "e2e-test-session-secret";
+  process.env.NAVER_ALLOW_MOCK = "true";
   process.env.NAVER_BROWSER_MODE = "mock";
 
   registerWorkflows();

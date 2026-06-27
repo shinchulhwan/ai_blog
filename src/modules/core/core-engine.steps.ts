@@ -28,8 +28,8 @@ export const CORE_ENGINE_STEPS: Record<
   },
   publishing: {
     id: "core-publishing",
-    label: "📦 발행 패키지 생성 중...",
-    progress: 60,
+    label: "🚀 네이버 발행 준비 중...",
+    progress: 80,
   },
   quality: {
     id: "core-quality",

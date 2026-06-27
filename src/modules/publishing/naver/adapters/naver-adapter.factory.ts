@@ -29,17 +29,20 @@ export function resolveNaverAdapterType(): NaverAdapterType {
   if (
     value === "open_api" ||
     value === "playwright" ||
-    value === "browser_automation" ||
-    value === "mock"
+    value === "browser_automation"
   ) {
     return value;
   }
 
-  return "mock";
+  if (value === "mock" && process.env.NAVER_ALLOW_MOCK === "true") {
+    return "mock";
+  }
+
+  return "browser_automation";
 }
 
 export function getAvailableNaverAdapters(): NaverAdapterType[] {
-  return ["mock"];
+  return ["browser_automation", "playwright"];
 }
 
 export function getPlannedNaverAdapters(): NaverAdapterType[] {

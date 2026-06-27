@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 import { LoadingSpinner } from "@/components/ui/LoadingSpinner";
 import { JobProgressBar } from "@/components/ui/JobProgressBar";
 import type { JobProgress } from "@/types/job";
+import { BLOG_WRITING_STYLE_LABELS, type BlogWritingStyle } from "@/types/blog-style";
 import type { GenerateBlogResponse } from "@/types/blog";
 
 interface BlogOutputProps {
@@ -12,6 +13,8 @@ interface BlogOutputProps {
   keyword?: string;
   jobProgress?: JobProgress;
   jobStatusLabel?: string;
+  publishUrl?: string;
+  writingStyle?: BlogWritingStyle;
 }
 
 function MarkdownContent({ content }: { content: string }) {
@@ -106,6 +109,8 @@ export function BlogOutput({
   keyword,
   jobProgress = 0,
   jobStatusLabel,
+  publishUrl,
+  writingStyle,
 }: BlogOutputProps) {
   if (isLoading) {
     const label =
@@ -171,6 +176,11 @@ export function BlogOutput({
             {blog.title}
           </h2>
           <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400">
+            {writingStyle && (
+              <span className="rounded-full bg-emerald-50 px-2.5 py-1 font-medium text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300">
+                {BLOG_WRITING_STYLE_LABELS[writingStyle]}
+              </span>
+            )}
             <span className="rounded-full bg-indigo-50 px-2.5 py-1 font-medium text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300">
               {blog.provider}
             </span>
@@ -191,6 +201,21 @@ export function BlogOutput({
             ))}
           </div>
         )}
+        {publishUrl ? (
+          <div className="mt-3 rounded-lg border border-emerald-200 bg-emerald-50 px-3 py-2 dark:border-emerald-900 dark:bg-emerald-950/40">
+            <p className="text-sm font-medium text-emerald-800 dark:text-emerald-200">
+              네이버 발행 완료
+            </p>
+            <a
+              href={publishUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-1 inline-block break-all text-sm font-medium text-indigo-600 underline underline-offset-2 hover:text-indigo-500 dark:text-indigo-400"
+            >
+              {publishUrl}
+            </a>
+          </div>
+        ) : null}
       </div>
       <div className="max-h-[600px] overflow-y-auto px-6 py-6">
         <MarkdownContent content={blog.content} />

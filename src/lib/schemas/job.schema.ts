@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { blogWritingStyleSchema } from "@/lib/prompts/writing-styles";
 
 export const jobStatusSchema = z.enum([
   "PENDING",
@@ -24,4 +25,9 @@ export const createJobSchema = z.object({
     .trim()
     .min(2, "키워드는 2자 이상 입력해 주세요.")
     .max(200, "키워드는 200자 이하로 입력해 주세요."),
+  writingStyle: blogWritingStyleSchema.optional(),
+});
+
+export const executeJobSchema = z.object({
+  writingStyle: blogWritingStyleSchema.optional(),
 });

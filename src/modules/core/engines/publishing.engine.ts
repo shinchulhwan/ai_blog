@@ -37,6 +37,7 @@ export class PublishingEngine extends BaseEngine<PublishingEngineOutput> {
       imageResult: context.state.imageResult!,
       result: context.state.result!,
       historyId: context.state.historyId,
+      onProgress: context.workflow.onProgress,
     });
 
     this.registerRollback(context, async () => {
@@ -45,14 +46,14 @@ export class PublishingEngine extends BaseEngine<PublishingEngineOutput> {
 
     context.state.publishPackage = output.publishPackage;
     context.state.historyId = output.historyId;
-    context.state.publishMock = output.naverPreparation.mock;
+    context.state.publishMock = output.mock;
     context.state.publishOutput = {
       platform: "naver",
       historyId: output.historyId,
-      externalId: `naver-browser-${output.historyId}`,
-      url: output.naverPreparation.loginPageUrl ?? "https://nid.naver.com/nidlogin.login",
-      publishedAt: new Date(),
-      mock: output.naverPreparation.mock,
+      externalId: output.naverPostId ?? `naver-${output.historyId}`,
+      url: output.publishedUrl ?? "",
+      publishedAt: output.publishedAt ? new Date(output.publishedAt) : new Date(),
+      mock: output.mock,
     };
 
     return output;

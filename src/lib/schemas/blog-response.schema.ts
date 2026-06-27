@@ -1,13 +1,14 @@
 import { z } from "zod";
+import { BLOG_FAQ_COUNT } from "@/lib/markdown/blog-content-guidelines";
 
 const altTagsSchema = z.object({
   representative: z.string().min(1),
-  body: z.array(z.string().min(1)).length(5),
+  body: z.array(z.string().min(1)).min(2).max(10),
 });
 
 const imageFilenamesSchema = z.object({
   representative: z.string().min(1),
-  body: z.array(z.string().min(1)).length(5),
+  body: z.array(z.string().min(1)).min(2).max(10),
 });
 
 const faqItemSchema = z.object({
@@ -29,10 +30,10 @@ export const blogFullResponseSchema = z.object({
   selectedTitle: z.string().min(1),
   metaDescription: z.string().min(1),
   content: z.string().min(1),
-  faq: z.array(faqItemSchema).length(5),
+  faq: z.array(faqItemSchema).length(BLOG_FAQ_COUNT),
   hashtags: z.array(z.string()),
   representativeImagePrompt: z.string().min(1),
-  bodyImagePrompts: z.array(z.string().min(1)).length(5),
+  bodyImagePrompts: z.array(z.string().min(1)).min(2).max(10),
   thumbnailText: z.string().min(1),
   altTags: altTagsSchema,
   imageFilenames: imageFilenamesSchema,
@@ -79,7 +80,7 @@ export const articleStructureSchema = z.object({
         keyPoints: z.array(z.string()).min(1),
       }),
     )
-    .min(3),
+    .min(5),
 });
 
 /** Step 6: body content (2500~3500 Korean characters) */
@@ -89,7 +90,7 @@ export const bodyContentSchema = z.object({
 
 /** Step 7: FAQ (exactly 5) */
 export const faqGenerationSchema = z.object({
-  faq: z.array(faqItemSchema).length(5),
+  faq: z.array(faqItemSchema).length(BLOG_FAQ_COUNT),
 });
 
 /** Step 8: hashtags */
@@ -105,7 +106,7 @@ export const metaDescriptionSchema = z.object({
 /** Step 10: image assets (representative + body + thumbnail + alt + filenames) */
 export const imageAssetsSchema = z.object({
   representativeImagePrompt: z.string().min(1),
-  bodyImagePrompts: z.array(z.string().min(1)).length(5),
+  bodyImagePrompts: z.array(z.string().min(1)).min(2).max(10),
   thumbnailText: z.string().min(1),
   altTags: altTagsSchema,
   imageFilenames: imageFilenamesSchema,
@@ -115,7 +116,7 @@ export const imageAssetsSchema = z.object({
 export const blogArticleSchema = z.object({
   metaDescription: z.string().min(80).max(160),
   content: z.string().min(2500).max(4000),
-  faq: z.array(faqItemSchema).length(5),
+  faq: z.array(faqItemSchema).length(BLOG_FAQ_COUNT),
   hashtags: z.array(z.string()).min(5).max(10),
 });
 

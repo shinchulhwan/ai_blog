@@ -63,6 +63,7 @@ export interface CoreEngineState {
   publishMock?: boolean;
   scheduleCompleted?: boolean;
   writingBrainCompleted?: boolean;
+  v3PipelineCompleted?: boolean;
 }
 
 export interface CoreEngineContext {

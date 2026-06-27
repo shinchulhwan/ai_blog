@@ -48,9 +48,9 @@ export const NAV_ITEMS: NavItem[] = [
   },
   {
     href: "/images",
-    label: "이미지 생성",
+    label: "Photo Manager",
     icon: "image",
-    description: "블로그용 대표·본문 이미지를 생성합니다.",
+    description: "프로젝트별 Photo Library에 이미지를 업로드·관리합니다.",
   },
   {
     href: "/seo",

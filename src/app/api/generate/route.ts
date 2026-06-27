@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { createJobSchema } from "@/lib/schemas/job.schema";
+import { parseWritingStyle } from "@/lib/prompts/writing-styles";
 import { jobService, runGenerationJob } from "@/modules/workflow";
 
 export const runtime = "nodejs";
@@ -36,7 +37,8 @@ export async function POST(request: Request) {
     const job = await jobService.create(parsed.data.keyword, {
       projectId: parsed.data.projectId,
     });
-    const result = await runGenerationJob(job.id);
+    const writingStyle = parseWritingStyle(parsed.data.writingStyle);
+    const result = await runGenerationJob(job.id, { writingStyle });
 
     return NextResponse.json({
       success: true,

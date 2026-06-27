@@ -50,6 +50,7 @@ async function main() {
   process.env.OPENAI_API_KEY ??= "test-key";
   process.env.OPENAI_MODEL ??= "gpt-4o";
   process.env.NAVER_SESSION_SECRET ??= "integration-test-session-secret";
+  process.env.NAVER_ALLOW_MOCK = "true";
   process.env.NAVER_BROWSER_MODE = "mock";
 
   registerWorkflows();

@@ -2,6 +2,7 @@ import OpenAI from "openai";
 import { withJsonOnly } from "@/lib/prompts/shared";
 import { reviewPrompts } from "@/lib/prompts/review";
 import { seoBlogPrompts } from "@/lib/prompts/seoBlog";
+import { postProcessDraftContent } from "@/lib/markdown/blog-content-post-processor";
 import { callStructuredJson } from "@/lib/openai/structured-request";
 import type { JobProgressUpdate } from "@/types/job";
 import type { ResearchRecord } from "@/types/research";
@@ -245,14 +246,14 @@ export async function generateBodyStep(
     `${sharedContext}\n\n메타디스크립션: ${metaDescription}\n\n본문:\n${content}`,
   );
 
-  return {
+  return postProcessDraftContent({
     sharedContext,
     content,
     faq,
     hashtags,
     metaDescription,
     imageAssets,
-  };
+  });
 }
 
 export async function evaluateSeoStep(
@@ -309,14 +310,14 @@ export async function rewriteDraftStep(
     `${draft.sharedContext}\n\n메타디스크립션: ${revised.metaDescription}\n\n수정된 본문:\n${revised.content}`,
   );
 
-  return {
+  return postProcessDraftContent({
     ...draft,
     content: revised.content,
     faq: revised.faq,
     hashtags: revised.hashtags,
     metaDescription: revised.metaDescription,
     imageAssets,
-  };
+  });
 }
 
 export function assembleBlogResult(

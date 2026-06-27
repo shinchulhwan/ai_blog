@@ -25,6 +25,7 @@ export interface GenerationJobRecord {
   naverUploadJobId: string | null;
   scheduleId: string | null;
   projectId: string;
+  publishUrl?: string | null;
 }
 
 export interface JobProgressUpdate {

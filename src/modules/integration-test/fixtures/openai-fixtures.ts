@@ -24,7 +24,7 @@ const BLOG_CONTENT = repeatText(
   3200,
 );
 
-const FAQ_ITEMS = Array.from({ length: 5 }, (_, index) => ({
+const FAQ_ITEMS = Array.from({ length: 3 }, (_, index) => ({
   question: `테스트 FAQ 질문 ${index + 1}은 무엇인가요?`,
   answer: `테스트 FAQ 답변 ${index + 1}입니다. 실제 운영 데이터가 아닌 통합 테스트용 응답입니다.`,
 }));
@@ -124,20 +124,27 @@ export function buildWritingBrainOutlineFixture() {
         flowOrder: 3,
       },
       {
+        heading: "주의할 점",
+        purpose: "실수 방지",
+        keyPoints: ["팁1", "팁2"],
+        flowOrder: 4,
+      },
+      {
         heading: "마무리",
         purpose: "정리",
         keyPoints: ["요약", "다음 행동"],
-        flowOrder: 4,
+        flowOrder: 5,
       },
     ],
     tableOfContents: [
       { order: 1, heading: "소개", dwellHook: "왜 중요한가" },
       { order: 2, heading: "핵심 개념", dwellHook: "반드시 알아야 할 점" },
       { order: 3, heading: "실전 방법", dwellHook: "바로 적용하기" },
-      { order: 4, heading: "마무리", dwellHook: "핵심 정리" },
+      { order: 4, heading: "주의할 점", dwellHook: "놓치기 쉬운 부분" },
+      { order: 5, heading: "마무리", dwellHook: "핵심 정리" },
     ],
     narrativeFlow: "문제 제기 후 해결책 제시",
-    faqPlan: Array.from({ length: 5 }, (_, index) => ({
+    faqPlan: Array.from({ length: 3 }, (_, index) => ({
       question: `FAQ 계획 ${index + 1}`,
       answerOutline: `FAQ 답변 개요 ${index + 1}`,
     })),

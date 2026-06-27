@@ -13,7 +13,6 @@ import type {
   PublishPackage,
   PublishPackageResult,
 } from "../types/publish-package.types";
-import type { NaverPublishingPreparationResult } from "../naver/preparation/naver-publishing-preparation.types";
 
 export interface PublishingEngineExecuteInput {
   keyword: string;
@@ -23,13 +22,17 @@ export interface PublishingEngineExecuteInput {
   imageResult: ImageResult;
   result: BlogFullResponse;
   historyId?: string;
+  onProgress?: (update: import("@/types/job").JobProgressUpdate) => Promise<void> | void;
 }
 
 export interface PublishingEngineExecuteResult {
   publishPackage: PublishPackage;
   packageResult: PublishPackageResult;
   historyId: string;
-  naverPreparation: NaverPublishingPreparationResult;
+  publishedUrl: string | null;
+  publishedAt: string | null;
+  naverPostId: string | null;
+  mock: boolean;
 }
 
 export class PublishingEngineService {
@@ -93,11 +96,12 @@ export class PublishingEngineService {
     const publishResult = await browserAutomationPackagePublisher.publish(
       publishPackage,
       historyRecord.id,
+      { onProgress: input.onProgress },
     );
 
-    if (!publishResult.success || !publishResult.naverPreparation.loggedIn) {
+    if (!publishResult.success || !publishResult.naverPublish.publishedUrl) {
       throw new Error(
-        publishResult.message || "네이버 로그인에 실패하여 Publishing Engine을 완료할 수 없습니다.",
+        publishResult.message || "네이버 블로그 발행에 실패했습니다.",
       );
     }
 
@@ -105,7 +109,10 @@ export class PublishingEngineService {
       publishPackage,
       packageResult: publishResult,
       historyId: historyRecord.id,
-      naverPreparation: publishResult.naverPreparation,
+      publishedUrl: publishResult.naverPublish.publishedUrl,
+      publishedAt: publishResult.naverPublish.publishedAt,
+      naverPostId: publishResult.naverPublish.naverPostId,
+      mock: publishResult.mock,
     };
   }
 }

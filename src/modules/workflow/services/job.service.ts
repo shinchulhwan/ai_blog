@@ -63,7 +63,29 @@ export class JobService {
 
   async getById(id: string): Promise<GenerationJobRecord | null> {
     const job = await prisma.generationJob.findUnique({ where: { id } });
-    return job ? toJobRecord(job) : null;
+
+    if (!job) {
+      return null;
+    }
+
+    const record = toJobRecord(job);
+
+    if (job.blogHistoryId && job.status === "COMPLETED") {
+      const history = await prisma.blogHistory.findUnique({
+        where: { id: job.blogHistoryId },
+        select: { publishUrl: true },
+      });
+
+      return {
+        ...record,
+        publishUrl: history?.publishUrl ?? null,
+      };
+    }
+
+    return {
+      ...record,
+      publishUrl: null,
+    };
   }
 
   async updateProgress(

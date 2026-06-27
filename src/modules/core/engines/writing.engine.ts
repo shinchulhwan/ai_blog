@@ -1,4 +1,7 @@
+import { BLOG_ENGINE_CONFIG } from "@/config/blog-engine.config";
+import { blogEngineV3Service } from "@/modules/blog-engine-v3";
 import { writingBrainEngine } from "@/modules/writing-brain";
+import { postProcessDraftContent } from "@/lib/markdown/blog-content-post-processor";
 import type { BodyDraft, TitleGenerationResult } from "@/modules/writer";
 import { BaseEngine } from "./base.engine";
 import type { CoreEngineContext, CoreEngineInput } from "../types/engine.types";
@@ -22,6 +25,37 @@ export class WritingEngine extends BaseEngine<WritingEngineOutput> {
     const research = context.state.research!;
     const { workflow } = context;
 
+    if (BLOG_ENGINE_CONFIG.v3Enabled) {
+      const v3Result = await blogEngineV3Service.execute(workflow.client, {
+        keyword: input.keyword,
+        research,
+        projectId: workflow.projectId,
+        customPrompt: workflow.customPrompt,
+        onProgress: workflow.onProgress,
+      });
+
+      context.state.intent = {
+        searchIntent: v3Result.seoAnalysis.searchIntent,
+        targetAudience: v3Result.seoAnalysis.targetAudience,
+        contentPurpose: v3Result.seoAnalysis.contentAngle,
+        userQuestions: v3Result.seoAnalysis.userQuestions,
+        contentAngle: v3Result.seoAnalysis.contentAngle,
+        summary: v3Result.seoAnalysis.summary,
+      };
+      context.state.titleData = v3Result.titleData;
+      context.state.draft = v3Result.draft;
+      context.state.validation = v3Result.validation;
+      context.state.review = v3Result.review;
+      context.state.imageResult = v3Result.imageResult;
+      context.state.v3PipelineCompleted = true;
+      context.state.writingBrainCompleted = true;
+
+      return {
+        titleData: v3Result.titleData,
+        draft: v3Result.draft,
+      };
+    }
+
     const brainResult = await writingBrainEngine.execute(workflow, {
       keyword: input.keyword,
       research,
@@ -43,7 +77,7 @@ export class WritingEngine extends BaseEngine<WritingEngineOutput> {
       : undefined;
 
     context.state.titleData = state.titleData;
-    context.state.draft = state.draft;
+    context.state.draft = state.draft ? postProcessDraftContent(state.draft) : state.draft;
     context.state.validation = state.validation
       ? {
           qualityScore: state.validation.qualityScore,

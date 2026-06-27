@@ -17,6 +17,16 @@ export class ImageEngine extends BaseEngine<ImageEngineOutput> {
   readonly id = "image" as const;
 
   async validate(_input: CoreEngineInput, context: CoreEngineContext): Promise<boolean> {
+    if (context.state.v3PipelineCompleted && context.state.imageResult) {
+      return (
+        Boolean(context.state.writingBrainCompleted) &&
+        Boolean(context.state.draft?.content) &&
+        Boolean(context.state.titleData?.selectedTitle) &&
+        Boolean(context.state.validation) &&
+        Boolean(context.state.review)
+      );
+    }
+
     return (
       Boolean(context.state.writingBrainCompleted) &&
       Boolean(context.state.draft?.content) &&
@@ -32,6 +42,20 @@ export class ImageEngine extends BaseEngine<ImageEngineOutput> {
   ): Promise<ImageEngineOutput> {
     const draft = context.state.draft!;
     const titleData = context.state.titleData!;
+
+    if (context.state.v3PipelineCompleted && context.state.imageResult) {
+      context.state.result = buildBlogResultWithImages({
+        titleData,
+        draft,
+        review: context.state.review!,
+        validation: context.state.validation!,
+      });
+
+      return {
+        imageResult: context.state.imageResult,
+        draft,
+      };
+    }
 
     const serviceInput = {
       keyword: input.keyword,

@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { BLOG_FAQ_COUNT, BLOG_H2_SECTION_MIN } from "@/lib/markdown/blog-content-guidelines";
 
 const faqItemSchema = z.object({
   question: z.string().min(1),
@@ -34,7 +35,7 @@ export const writingBrainOutlineSchema = z.object({
         flowOrder: z.number().int().min(1),
       }),
     )
-    .min(4),
+    .min(BLOG_H2_SECTION_MIN),
   tableOfContents: z
     .array(
       z.object({
@@ -43,7 +44,7 @@ export const writingBrainOutlineSchema = z.object({
         dwellHook: z.string().min(1),
       }),
     )
-    .min(4),
+    .min(BLOG_H2_SECTION_MIN),
   narrativeFlow: z.string().min(1),
   faqPlan: z
     .array(
@@ -52,12 +53,12 @@ export const writingBrainOutlineSchema = z.object({
         answerOutline: z.string().min(1),
       }),
     )
-    .length(5),
+    .length(BLOG_FAQ_COUNT),
 });
 
 export const writingBrainDraftSchema = z.object({
   content: z.string().min(2500).max(4000),
-  faq: z.array(faqItemSchema).length(5),
+  faq: z.array(faqItemSchema).length(BLOG_FAQ_COUNT),
   hashtags: z.array(z.string()).min(5).max(10),
   metaDescription: z.string().min(80).max(160),
 });
@@ -85,7 +86,7 @@ export const writingBrainQualityReviewSchema = z.object({
 
 export const writingBrainRewriteSchema = z.object({
   content: z.string().min(2500).max(4000),
-  faq: z.array(faqItemSchema).length(5),
+  faq: z.array(faqItemSchema).length(BLOG_FAQ_COUNT),
   hashtags: z.array(z.string()).min(5).max(10),
   metaDescription: z.string().min(80).max(160),
   rewrittenSections: z.array(z.string().min(1)).min(1),

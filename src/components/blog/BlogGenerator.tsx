@@ -6,7 +6,7 @@ import { ErrorMessage } from "@/components/ui/ErrorMessage";
 import { useBlogGenerator } from "@/hooks/useBlogGenerator";
 
 export function BlogGenerator() {
-  const { blog, isLoading, isSaving, saveSuccess, error, keyword, jobProgress, jobStatusLabel, generate, saveMarkdown, clearError } =
+  const { blog, isLoading, isSaving, saveSuccess, error, keyword, jobProgress, jobStatusLabel, publishUrl, writingStyle, generate, saveMarkdown, clearError } =
     useBlogGenerator();
 
   return (
@@ -30,6 +30,8 @@ export function BlogGenerator() {
         keyword={keyword ?? undefined}
         jobProgress={jobProgress}
         jobStatusLabel={jobStatusLabel ?? undefined}
+        publishUrl={publishUrl ?? undefined}
+        writingStyle={writingStyle ?? undefined}
       />
     </div>
   );

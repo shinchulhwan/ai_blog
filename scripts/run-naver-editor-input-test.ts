@@ -54,6 +54,7 @@ const hasNaverCredentials =
   Boolean(process.env.NAVER_SESSION_SECRET?.trim());
 
 if (!hasNaverCredentials) {
+  process.env.NAVER_ALLOW_MOCK = "true";
   process.env.NAVER_BROWSER_MODE = "mock";
 } else {
   process.env.NAVER_BROWSER_MODE ??= "playwright";

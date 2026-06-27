@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
 import { getKoreanErrorMessage } from "@/lib/errors";
+import { executeJobSchema } from "@/lib/schemas/job.schema";
+import { parseWritingStyle } from "@/lib/prompts/writing-styles";
 import { jobService, runGenerationJob } from "@/modules/workflow";
 
 export const runtime = "nodejs";
@@ -9,7 +11,7 @@ interface RouteContext {
   params: Promise<{ id: string }>;
 }
 
-export async function POST(_request: Request, context: RouteContext) {
+export async function POST(request: Request, context: RouteContext) {
   const { id } = await context.params;
 
   const existing = await jobService.getById(id);
@@ -21,8 +23,27 @@ export async function POST(_request: Request, context: RouteContext) {
     );
   }
 
+  let writingStyle = parseWritingStyle(undefined);
+
   try {
-    const result = await runGenerationJob(id);
+    const body: unknown = await request.json().catch(() => null);
+
+    if (body !== null) {
+      const parsed = executeJobSchema.safeParse(body);
+
+      if (!parsed.success) {
+        const message = parsed.error.issues.map((issue) => issue.message).join("; ");
+        return NextResponse.json({ success: false, error: message }, { status: 400 });
+      }
+
+      writingStyle = parseWritingStyle(parsed.data.writingStyle);
+    }
+  } catch {
+    // Empty body is allowed — default style applies.
+  }
+
+  try {
+    const result = await runGenerationJob(id, { writingStyle });
 
     return NextResponse.json({
       success: true,
@@ -30,6 +51,8 @@ export async function POST(_request: Request, context: RouteContext) {
         jobId: result.jobId,
         historyId: result.historyId,
         result: result.result,
+        publishUrl: result.publishUrl?.trim() || null,
+        writingStyle,
       },
     });
   } catch (error) {

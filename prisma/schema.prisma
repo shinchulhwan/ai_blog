@@ -34,6 +34,7 @@ model Project {
   workflowRuns WorkflowRun[]
   prompts      ProjectPrompt[]
   knowledge    ProjectKnowledge[]
+  photoLibrary PhotoLibrary?
 
   @@index([status])
   @@index([name])
@@ -68,7 +69,40 @@ model ProjectKnowledge {
   @@index([projectId])
 }
 
-/// 키워드 자동 관리 — 프로젝트 단위
+/// 프로젝트별 Photo Library
+model PhotoLibrary {
+  id        String       @id @default(cuid())
+  projectId String       @unique
+  project   Project      @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  name      String       @default("Photo Library")
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
+  photos    PhotoAsset[]
+
+  @@index([projectId])
+}
+
+/// Photo Library 이미지 에셋 (jpg, png, webp)
+model PhotoAsset {
+  id           String       @id @default(cuid())
+  libraryId    String
+  library      PhotoLibrary @relation(fields: [libraryId], references: [id], onDelete: Cascade)
+  projectId    String
+  originalName String
+  storedName   String
+  mimeType     String
+  fileSize     Int
+  sortOrder    Int          @default(0)
+  storagePath  String
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+
+  @@unique([libraryId, storedName])
+  @@index([libraryId])
+  @@index([projectId])
+  @@index([sortOrder])
+}
+
 model Keyword {
   id              String        @id @default(cuid())
   projectId       String

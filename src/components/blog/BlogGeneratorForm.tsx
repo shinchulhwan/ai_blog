@@ -5,9 +5,14 @@ import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { Select } from "@/components/ui/Select";
 import { useProjects } from "@/hooks/useProjects";
+import {
+  BLOG_WRITING_STYLE_OPTIONS,
+  DEFAULT_BLOG_WRITING_STYLE,
+  type BlogWritingStyle,
+} from "@/types/blog-style";
 
 interface BlogGeneratorFormProps {
-  onGenerate: (keyword: string, projectId: string) => void;
+  onGenerate: (keyword: string, projectId: string, writingStyle: BlogWritingStyle) => void;
   onSaveMarkdown?: () => void;
   isLoading: boolean;
   isSaving?: boolean;
@@ -28,6 +33,9 @@ export function BlogGeneratorForm({
   const { projects, isLoading: isProjectsLoading } = useProjects();
   const [projectId, setProjectId] = useState("");
   const [keyword, setKeyword] = useState("");
+  const [writingStyle, setWritingStyle] = useState<BlogWritingStyle>(
+    DEFAULT_BLOG_WRITING_STYLE,
+  );
   const [validationError, setValidationError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -57,7 +65,7 @@ export function BlogGeneratorForm({
     }
 
     setValidationError(null);
-    onGenerate(trimmed, projectId);
+    onGenerate(trimmed, projectId, writingStyle);
   }
 
   const activeProjects = projects.filter((item) => item.status === "ACTIVE");
@@ -96,6 +104,24 @@ export function BlogGeneratorForm({
           {activeProjects.map((project) => (
             <option key={project.id} value={project.id}>
               {project.name}
+            </option>
+          ))}
+        </Select>
+      </div>
+
+      <div className="mb-4">
+        <Select
+          label="글 스타일"
+          name="writingStyle"
+          value={writingStyle}
+          onChange={(event) => {
+            setWritingStyle(event.target.value as BlogWritingStyle);
+          }}
+          disabled={isLoading || disabled}
+        >
+          {BLOG_WRITING_STYLE_OPTIONS.map((option) => (
+            <option key={option.value} value={option.value}>
+              {option.label} — {option.description}
             </option>
           ))}
         </Select>

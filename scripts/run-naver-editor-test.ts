@@ -48,10 +48,12 @@ const hasNaverCredentials =
 const explicitBrowserMode = process.env.NAVER_BROWSER_MODE?.trim().toLowerCase();
 
 if (explicitBrowserMode === "mock") {
+  process.env.NAVER_ALLOW_MOCK = "true";
   process.env.NAVER_BROWSER_MODE = "mock";
 } else if (explicitBrowserMode === "playwright") {
   process.env.NAVER_BROWSER_MODE = "playwright";
 } else if (!hasNaverCredentials) {
+  process.env.NAVER_ALLOW_MOCK = "true";
   process.env.NAVER_BROWSER_MODE = "mock";
 } else {
   process.env.NAVER_BROWSER_MODE = "playwright";

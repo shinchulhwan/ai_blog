@@ -22,12 +22,16 @@ export interface NaverManager {
   dispose(context: NaverManagerContext): Promise<void>;
 }
 
+/**
+ * Naver browser runtime mode.
+ * Default: playwright (real browser). Mock is opt-in only via NAVER_ALLOW_MOCK=true.
+ */
 export function resolveNaverBrowserMode(): "mock" | "playwright" {
   const value = process.env.NAVER_BROWSER_MODE?.trim().toLowerCase();
 
-  if (value === "playwright") {
-    return "playwright";
+  if (value === "mock" && process.env.NAVER_ALLOW_MOCK === "true") {
+    return "mock";
   }
 
-  return "mock";
+  return "playwright";
 }

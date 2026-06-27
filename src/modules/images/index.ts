@@ -38,6 +38,11 @@ export {
 } from "./services/image-metadata.builder";
 
 export {
+  DynamicImageService,
+  dynamicImageService,
+} from "./services/dynamic-image.service";
+
+export {
   applyImageResultToDraft,
   buildBlogResultWithImages,
 } from "./services/image-result.mapper";

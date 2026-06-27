@@ -2,34 +2,50 @@ import type {
   PublishPackage,
   PublishPackageResult,
 } from "../types/publish-package.types";
-import { naverPublishingPreparationService } from "../naver/preparation/naver-publishing-preparation.service";
-import type { NaverPublishingPreparationResult } from "../naver/preparation/naver-publishing-preparation.types";
+import {
+  naverFullPublishService,
+  NaverFullPublishStepError,
+  type NaverFullPublishResult,
+} from "../naver/publish/naver-full-publish.service";
+import type { JobProgressUpdate } from "@/types/job";
 
 export interface BrowserAutomationPublishResult extends PublishPackageResult {
-  naverPreparation: NaverPublishingPreparationResult;
+  naverPublish: NaverFullPublishResult;
 }
 
 export class BrowserAutomationPackagePublisher {
   async publish(
     publishPackage: PublishPackage,
     historyId: string,
+    options?: {
+      onProgress?: (update: JobProgressUpdate) => Promise<void> | void;
+    },
   ): Promise<BrowserAutomationPublishResult> {
-    const naverPreparation = await naverPublishingPreparationService.prepare(
-      publishPackage,
-      historyId,
-    );
+    try {
+      const naverPublish = await naverFullPublishService.publish(
+        publishPackage,
+        historyId,
+        { onProgress: options?.onProgress },
+      );
 
-    return {
-      success: naverPreparation.success,
-      mock: naverPreparation.mock,
-      historyId,
-      package: {
-        ...publishPackage,
-        updatedAt: new Date().toISOString(),
-      },
-      message: naverPreparation.message,
-      naverPreparation,
-    };
+      return {
+        success: naverPublish.success,
+        mock: naverPublish.mock,
+        historyId,
+        package: {
+          ...publishPackage,
+          updatedAt: new Date().toISOString(),
+        },
+        message: naverPublish.message,
+        naverPublish,
+      };
+    } catch (error) {
+      if (error instanceof NaverFullPublishStepError) {
+        throw error;
+      }
+
+      throw error instanceof Error ? error : new Error("네이버 발행에 실패했습니다.");
+    }
   }
 }
 

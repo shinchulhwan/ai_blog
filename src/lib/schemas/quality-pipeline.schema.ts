@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { BLOG_FAQ_COUNT } from "@/lib/markdown/blog-content-guidelines";
 
 const faqItemSchema = z.object({
   question: z.string().min(1),
@@ -35,7 +36,7 @@ export const seoAnalysisSchema = z.object({
 /** Humanizer — 사람처럼 수정된 콘텐츠 */
 export const humanizerOutputSchema = z.object({
   content: z.string().min(2500).max(4000),
-  faq: z.array(faqItemSchema).length(5),
+  faq: z.array(faqItemSchema).length(BLOG_FAQ_COUNT),
   hashtags: z.array(z.string()).min(5).max(10),
   metaDescription: z.string().min(80).max(160),
 });

@@ -8,6 +8,11 @@ import {
   type BlogFullResponse,
 } from "@/lib/schemas/blog-response.schema";
 import { AI_CONFIG } from "@/config/ai.config";
+import { parseJsonResponseSafe } from "@/lib/http/parse-json-response";
+import {
+  DEFAULT_BLOG_WRITING_STYLE,
+  type BlogWritingStyle,
+} from "@/types/blog-style";
 import {
   JOB_PROGRESS_LABELS,
   JOB_STATUS_LABELS,
@@ -30,6 +35,7 @@ interface ExecuteSuccessData {
   jobId: string;
   historyId: string;
   result: BlogFullResponse;
+  publishUrl?: string | null;
 }
 
 interface UseBlogGeneratorReturn {
@@ -42,7 +48,9 @@ interface UseBlogGeneratorReturn {
   keyword: string | null;
   jobProgress: JobProgress;
   jobStatusLabel: string | null;
-  generate: (keyword: string, projectId: string) => Promise<void>;
+  publishUrl: string | null;
+  writingStyle: BlogWritingStyle | null;
+  generate: (keyword: string, projectId: string, writingStyle?: BlogWritingStyle) => Promise<void>;
   saveMarkdown: () => Promise<void>;
   clearError: () => void;
   reset: () => void;
@@ -92,16 +100,22 @@ export function useBlogGenerator(): UseBlogGeneratorReturn {
   const [keyword, setKeyword] = useState<string | null>(null);
   const [jobProgress, setJobProgress] = useState<JobProgress>(0);
   const [jobStatusLabel, setJobStatusLabel] = useState<string | null>(null);
+  const [publishUrl, setPublishUrl] = useState<string | null>(null);
+  const [writingStyle, setWritingStyle] = useState<BlogWritingStyle | null>(null);
   const pollTimerRef = useRef<number | null>(null);
+  const pollingActiveRef = useRef(false);
   const lastPollStateRef = useRef<{ progress: JobProgress; label: string } | null>(
     null,
   );
 
   const stopPolling = useCallback(() => {
+    pollingActiveRef.current = false;
+
     if (pollTimerRef.current !== null) {
       window.clearInterval(pollTimerRef.current);
       pollTimerRef.current = null;
     }
+
     lastPollStateRef.current = null;
   }, []);
 
@@ -116,106 +130,114 @@ export function useBlogGenerator(): UseBlogGeneratorReturn {
     lastPollStateRef.current = { progress: job.progress, label };
     setJobProgress(job.progress);
     setJobStatusLabel(label);
+
+    if (job.publishUrl) {
+      setPublishUrl(job.publishUrl);
+    }
   }, []);
 
-  const pollJob = useCallback(
-    (jobId: string) =>
-      new Promise<GenerationJobRecord>((resolve, reject) => {
-        stopPolling();
+  const pollJobProgress = useCallback(
+    (jobId: string) => {
+      stopPolling();
+      pollingActiveRef.current = true;
 
-        const poll = async () => {
-          try {
-            const response = await fetch(`${API_ROUTES.jobs}/${jobId}`);
+      const pollOnce = async () => {
+        if (!pollingActiveRef.current) {
+          return;
+        }
 
-            if (!response.ok) {
-              const data: unknown = await response.json().catch(() => null);
-              throw new Error(parseApiError(data, "작업 상태를 불러오지 못했습니다."));
-            }
+        try {
+          const response = await fetch(`${API_ROUTES.jobs}/${jobId}`, {
+            cache: "no-store",
+          });
 
-            const data = (await response.json()) as ApiSuccessResponse<GenerationJobRecord>;
-            const job = data.data;
-
-            applyJobProgress(job);
-
-            if (job.status === "COMPLETED") {
-              stopPolling();
-              resolve(job);
-              return;
-            }
-
-            if (job.status === "FAILED") {
-              stopPolling();
-              reject(new Error(job.errorMessage ?? "블로그 글 생성에 실패했습니다."));
-            }
-          } catch (err) {
-            stopPolling();
-
-            if (err instanceof TypeError) {
-              reject(new Error("네트워크 오류가 발생했습니다. 연결 상태를 확인해 주세요."));
-              return;
-            }
-
-            reject(err instanceof Error ? err : new Error("작업 상태를 불러오지 못했습니다."));
+          if (!response.ok) {
+            return;
           }
-        };
 
-        void poll();
-        pollTimerRef.current = window.setInterval(() => {
-          void poll();
-        }, POLL_INTERVAL_MS);
-      }),
+          const data = await parseJsonResponseSafe<
+            ApiSuccessResponse<GenerationJobRecord>
+          >(response);
+
+          if (!data?.success || !data.data) {
+            return;
+          }
+
+          applyJobProgress(data.data);
+        } catch {
+          // Long-running execute can starve the dev server briefly; ignore transient poll errors.
+        }
+      };
+
+      void pollOnce();
+      pollTimerRef.current = window.setInterval(() => {
+        void pollOnce();
+      }, POLL_INTERVAL_MS);
+    },
     [applyJobProgress, stopPolling],
   );
 
   const generate = useCallback(
-    async (inputKeyword: string, projectId: string) => {
+    async (inputKeyword: string, projectId: string, style: BlogWritingStyle = DEFAULT_BLOG_WRITING_STYLE) => {
       setIsLoading(true);
       setError(null);
       setSaveSuccess(false);
       setKeyword(inputKeyword);
+      setWritingStyle(style);
       setJobProgress(0);
-      setJobStatusLabel(JOB_STATUS_LABELS.PENDING);
+      setPublishUrl(null);
+      setJobStatusLabel("🤖 AI 글 생성 중...");
 
       try {
         const createResponse = await fetch(API_ROUTES.jobs, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ keyword: inputKeyword, projectId }),
+          body: JSON.stringify({ keyword: inputKeyword, projectId, writingStyle: style }),
         });
 
-        const createData: unknown = await createResponse.json().catch(() => null);
+        const createData = await parseJsonResponseSafe<
+          ApiSuccessResponse<GenerationJobRecord> | ApiErrorResponse
+        >(createResponse);
 
-        if (!createResponse.ok) {
+        if (!createResponse.ok || !createData || !("data" in createData)) {
           throw new Error(parseApiError(createData, "생성 작업을 시작하지 못했습니다."));
         }
 
-        const job = (createData as ApiSuccessResponse<GenerationJobRecord>).data;
+        const job = createData.data;
 
-        const executePromise = fetch(`${API_ROUTES.jobs}/${job.id}/execute`, {
+        pollJobProgress(job.id);
+
+        const executeResponse = await fetch(`${API_ROUTES.jobs}/${job.id}/execute`, {
           method: "POST",
-        }).then(async (response) => {
-          const data: unknown = await response.json().catch(() => null);
-
-          if (!response.ok) {
-            throw new Error(parseApiError(data, "블로그 글 생성에 실패했습니다."));
-          }
-
-          return (data as ApiSuccessResponse<ExecuteSuccessData>).data;
+          headers: { "Content-Type": "application/json" },
+          cache: "no-store",
+          body: JSON.stringify({ writingStyle: style }),
         });
 
-        const [, executeResult] = await Promise.all([
-          pollJob(job.id),
-          executePromise,
-        ]);
+        stopPolling();
 
+        const executeData = await parseJsonResponseSafe<
+          ApiSuccessResponse<ExecuteSuccessData> | ApiErrorResponse
+        >(executeResponse);
+
+        if (!executeResponse.ok || !executeData || !("data" in executeData)) {
+          throw new Error(parseApiError(executeData, "블로그 글 생성에 실패했습니다."));
+        }
+
+        const executeResult = executeData.data;
         const parsed = blogFullResponseSchema.safeParse(executeResult.result);
 
         if (!parsed.success) {
           throw new Error("블로그 글 데이터 형식이 올바르지 않습니다.");
         }
 
+        const resolvedPublishUrl = executeResult.publishUrl?.trim() || null;
+
         setJobProgress(100);
-        setJobStatusLabel("✅ 완료");
+        setPublishUrl(resolvedPublishUrl);
+        setJobStatusLabel(
+          resolvedPublishUrl ? "✅ 완료 — 발행됨" : "✅ 완료",
+        );
         setFullBlog(parsed.data);
         setBlog(mapToUiBlog(parsed.data));
       } catch (err) {
@@ -231,7 +253,7 @@ export function useBlogGenerator(): UseBlogGeneratorReturn {
         setIsLoading(false);
       }
     },
-    [pollJob, stopPolling],
+    [pollJobProgress, stopPolling],
   );
 
   const saveMarkdown = useCallback(async () => {
@@ -251,7 +273,9 @@ export function useBlogGenerator(): UseBlogGeneratorReturn {
         body: JSON.stringify({ keyword, blog: fullBlog }),
       });
 
-      const data: unknown = await response.json().catch(() => null);
+      const data = await parseJsonResponseSafe<ApiSuccessResponse | ApiErrorResponse>(
+        response,
+      );
 
       if (!response.ok) {
         throw new Error(parseApiError(data, "Markdown 저장에 실패했습니다."));
@@ -283,6 +307,8 @@ export function useBlogGenerator(): UseBlogGeneratorReturn {
     setSaveSuccess(false);
     setJobProgress(0);
     setJobStatusLabel(null);
+    setPublishUrl(null);
+    setWritingStyle(null);
   }, [stopPolling]);
 
   return {
@@ -295,6 +321,8 @@ export function useBlogGenerator(): UseBlogGeneratorReturn {
     keyword,
     jobProgress,
     jobStatusLabel,
+    publishUrl,
+    writingStyle,
     generate,
     saveMarkdown,
     clearError,

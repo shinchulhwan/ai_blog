@@ -1,3 +1,4 @@
+import { resolveBodyImageCountByLength } from "@/lib/schemas/blog-engine-v3.schema";
 import { IMAGE_CONFIG } from "@/config/image.config";
 import type { ImageMetadataInput } from "../providers/image-provider.types";
 
@@ -26,7 +27,19 @@ export function buildImageMetadataFields(input: ImageMetadataInput): ImageMetada
     `Professional blog hero image about "${input.title}", clean modern style, ` +
       `natural lighting, no text overlay, keyword: ${input.keyword}`;
 
-  const contentImages = Array.from({ length: 5 }, (_, index) => {
+  const bodyCount = Math.min(
+    10,
+    Math.max(
+      2,
+      Math.round(
+        (resolveBodyImageCountByLength(input.content.length).min +
+          resolveBodyImageCountByLength(input.content.length).max) /
+          2,
+      ),
+    ),
+  );
+
+  const contentImages = Array.from({ length: bodyCount }, (_, index) => {
     return (
       `Blog section illustration #${index + 1} for "${input.title}", ` +
       `supporting visual, editorial style, keyword: ${input.keyword}`
@@ -43,7 +56,7 @@ export function buildImageMetadataFields(input: ImageMetadataInput): ImageMetada
 
   const fileNames = [
     `${slug}-cover.webp`,
-    ...Array.from({ length: 5 }, (_, index) => `${slug}-body-${index + 1}.webp`),
+    ...Array.from({ length: bodyCount }, (_, index) => `${slug}-body-${index + 1}.webp`),
   ];
 
   return {

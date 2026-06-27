@@ -52,7 +52,12 @@ const hasNaverCredentials =
 const hasOpenAiKey = Boolean(process.env.OPENAI_API_KEY?.trim());
 
 process.env.IMAGE_PROVIDER ??= "mock";
-process.env.NAVER_BROWSER_MODE = hasNaverCredentials ? "playwright" : "mock";
+if (hasNaverCredentials) {
+  process.env.NAVER_BROWSER_MODE = "playwright";
+} else {
+  process.env.NAVER_ALLOW_MOCK = "true";
+  process.env.NAVER_BROWSER_MODE = "mock";
+}
 
 if (!hasOpenAiKey) {
   process.env.OPENAI_API_KEY = "test-key";

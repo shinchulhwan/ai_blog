@@ -1,43 +1,8 @@
 {
   "step": "publish-success",
-  "url": "https://blog.naver.com/onclean24/224329096289",
-  "collectedAt": "2026-06-27T11:33:44.051Z",
+  "url": "https://blog.naver.com/onclean24/224329295973",
+  "collectedAt": "2026-06-27T17:30:37.137Z",
   "entries": [
-    {
-      "url": "https://nlog.naver.com/n",
-      "method": "POST",
-      "status": 204,
-      "resourceType": "ping",
-      "failed": false
-    },
-    {
-      "url": "https://nlog.naver.com/n",
-      "method": "POST",
-      "status": 204,
-      "resourceType": "ping",
-      "failed": false
-    },
-    {
-      "url": "https://nlog.naver.com/n",
-      "method": "POST",
-      "status": 204,
-      "resourceType": "ping",
-      "failed": false
-    },
-    {
-      "url": "https://nlog.naver.com/n",
-      "method": "POST",
-      "status": 204,
-      "resourceType": "ping",
-      "failed": false
-    },
-    {
-      "url": "https://nlog.naver.com/n",
-      "method": "POST",
-      "status": 204,
-      "resourceType": "ping",
-      "failed": false
-    },
     {
       "url": "https://blog.naver.com/RabbitAutoSaveWrite.naver",
       "method": "POST",
@@ -46,7 +11,7 @@
       "failed": false
     },
     {
-      "url": "https://blog.naver.com/SuicideWordCheckAsync.naver?key=pc_post_write&postTitle=%5BReal%20Publish%20Sprint%5D%202026-06-27%2011%3A31",
+      "url": "https://blog.naver.com/SuicideWordCheckAsync.naver?key=pc_post_write&postTitle=AI%EB%A5%BC%20%ED%86%B5%ED%95%9C%20%EC%9E%90%EB%8F%99%20%EB%B8%94%EB%A1%9C%EA%B7%B8%20%ED%8F%AC%EC%8A%A4%ED%8C%85%3A%20%ED%9A%A8%EC%9C%A8%EC%84%B1%EA%B3%BC%20%ED%98%81%EC%8B%A0",
       "method": "GET",
       "status": 200,
       "resourceType": "xhr",
@@ -74,17 +39,17 @@
       "failed": false
     },
     {
-      "url": "https://nlog.naver.com/n",
-      "method": "POST",
-      "status": 204,
-      "resourceType": "ping",
-      "failed": false
-    },
-    {
       "url": "https://blog.naver.com/RabbitTempPostWrite.naver",
       "method": "POST",
       "status": 200,
       "resourceType": "xhr",
+      "failed": false
+    },
+    {
+      "url": "https://nlog.naver.com/n",
+      "method": "POST",
+      "status": 204,
+      "resourceType": "ping",
       "failed": false
     },
     {
@@ -126,6 +91,13 @@
       "url": "https://nlog.naver.com/n",
       "method": "POST",
       "status": 204,
+      "resourceType": "ping",
+      "failed": false
+    },
+    {
+      "url": "https://nlog.naver.com/n",
+      "method": "POST",
+      "status": 204,
       "resourceType": "fetch",
       "failed": false
     },
@@ -137,14 +109,7 @@
       "failed": true
     },
     {
-      "url": "https://nlog.naver.com/n",
-      "method": "POST",
-      "status": 204,
-      "resourceType": "ping",
-      "failed": false
-    },
-    {
-      "url": "https://ncpt.naver.com/v2/tokens?q=1782559992467&tid=ea0wrnsgr0p",
+      "url": "https://ncpt.naver.com/v2/tokens?q=1782581406102&tid=99d7rphh37",
       "method": "POST",
       "status": 200,
       "resourceType": "xhr",
@@ -165,7 +130,7 @@
       "failed": false
     },
     {
-      "url": "https://blog.naver.com/PostView.naver?blogId=onclean24&Redirect=View&logNo=224329096289&categoryNo=1&isAfterWrite=true&isMrblogPost=false&isHappyBeanLeverage=true&contentLength=2098",
+      "url": "https://blog.naver.com/PostView.naver?blogId=onclean24&Redirect=View&logNo=224329295973&categoryNo=1&isAfterWrite=true&isMrblogPost=false&isHappyBeanLeverage=true&contentLength=4401",
       "method": "GET",
       "status": 200,
       "resourceType": "document",
@@ -186,17 +151,10 @@
       "failed": true
     },
     {
-      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning/LayoutTopCommon-291396673_https.css",
+      "url": "https://ssl.pstatic.net/static.gn/templates/gnb_utf8.nhn?20260628",
       "method": "GET",
       "status": 200,
-      "resourceType": "stylesheet",
-      "failed": false
-    },
-    {
-      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning/PostView-876979288_https.css",
-      "method": "GET",
-      "status": 200,
-      "resourceType": "stylesheet",
+      "resourceType": "script",
       "failed": false
     },
     {
@@ -207,13 +165,6 @@
       "failed": false
     },
     {
-      "url": "https://ssl.pstatic.net/static.gn/templates/gnb_utf8.nhn?20260627",
-      "method": "GET",
-      "status": 200,
-      "resourceType": "script",
-      "failed": false
-    },
-    {
       "url": "https://editor-static.pstatic.net/v/basic/1.76.0/css/se.viewer.desktop.css?v=1.76.0-20260424190054",
       "method": "GET",
       "status": 200,
@@ -221,24 +172,10 @@
       "failed": false
     },
     {
-      "url": "https://ssl.pstatic.net/static/photoViewer/1.1.5/photo-viewer.css",
+      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning/LayoutTopCommon-291396673_https.css",
       "method": "GET",
       "status": 200,
       "resourceType": "stylesheet",
-      "failed": false
-    },
-    {
-      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning//common/css/blogdomain/BlogDomainRegisterLayer-717ef83_https.css",
-      "method": "GET",
-      "status": 200,
-      "resourceType": "stylesheet",
-      "failed": false
-    },
-    {
-      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning//common/js/global/RemoveSubDomain-12d2f16_https.js",
-      "method": "GET",
-      "status": 200,
-      "resourceType": "script",
       "failed": false
     },
     {
@@ -249,10 +186,17 @@
       "failed": false
     },
     {
-      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning/Jindo152-313837964_https.js",
+      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning/PostView-876979288_https.css",
       "method": "GET",
       "status": 200,
-      "resourceType": "script",
+      "resourceType": "stylesheet",
+      "failed": false
+    },
+    {
+      "url": "https://ssl.pstatic.net/static/photoViewer/1.1.5/photo-viewer.css",
+      "method": "GET",
+      "status": 200,
+      "resourceType": "stylesheet",
       "failed": false
     },
     {
@@ -270,7 +214,21 @@
       "failed": false
     },
     {
-      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning//common/js/LayerPopup-a141e19_https.js",
+      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning//common/css/blogdomain/BlogDomainRegisterLayer-717ef83_https.css",
+      "method": "GET",
+      "status": 200,
+      "resourceType": "stylesheet",
+      "failed": false
+    },
+    {
+      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning//common/js/global/RemoveSubDomain-12d2f16_https.js",
+      "method": "GET",
+      "status": 200,
+      "resourceType": "script",
+      "failed": false
+    },
+    {
+      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning/Jindo152-313837964_https.js",
       "method": "GET",
       "status": 200,
       "resourceType": "script",
@@ -284,27 +242,6 @@
       "failed": false
     },
     {
-      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning/JindoComponent-190469086_https.js",
-      "method": "GET",
-      "status": 200,
-      "resourceType": "script",
-      "failed": false
-    },
-    {
-      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning//css/navercomment/naver_comment_blog_base-61fa3cc_https.css",
-      "method": "GET",
-      "status": 200,
-      "resourceType": "stylesheet",
-      "failed": false
-    },
-    {
-      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning//common/lib/jquery/jquery.loadTemplate-1.5.10.min-c0311fc_https.js",
-      "method": "GET",
-      "status": 200,
-      "resourceType": "script",
-      "failed": false
-    },
-    {
       "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning/PhotoViewerNew-184483191_https.js",
       "method": "GET",
       "status": 200,
@@ -312,7 +249,21 @@
       "failed": false
     },
     {
-      "url": "https://ssl.pstatic.net/static/photoViewer/1.1.5/photo-viewer.js",
+      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning//common/js/LayerPopup-a141e19_https.js",
+      "method": "GET",
+      "status": 200,
+      "resourceType": "script",
+      "failed": false
+    },
+    {
+      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning/JindoComponent-190469086_https.js",
+      "method": "GET",
+      "status": 200,
+      "resourceType": "script",
+      "failed": false
+    },
+    {
+      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning//common/lib/jquery/jquery.loadTemplate-1.5.10.min-c0311fc_https.js",
       "method": "GET",
       "status": 200,
       "resourceType": "script",
@@ -326,13 +277,6 @@
       "failed": false
     },
     {
-      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning//common/js/lottie.min-0e23629_https.js",
-      "method": "GET",
-      "status": 200,
-      "resourceType": "script",
-      "failed": false
-    },
-    {
       "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning//common/lib/jquery/3.2.1/jquery-3.2.1-d2d8ca4_https.js",
       "method": "GET",
       "status": 200,
@@ -340,7 +284,42 @@
       "failed": false
     },
     {
+      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning//css/navercomment/naver_comment_blog_base-61fa3cc_https.css",
+      "method": "GET",
+      "status": 200,
+      "resourceType": "stylesheet",
+      "failed": false
+    },
+    {
       "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning/PostTopCommon-603656815_https.js",
+      "method": "GET",
+      "status": 200,
+      "resourceType": "script",
+      "failed": false
+    },
+    {
+      "url": "https://ssl.pstatic.net/static/photoViewer/1.1.5/photo-viewer.js",
+      "method": "GET",
+      "status": 200,
+      "resourceType": "script",
+      "failed": false
+    },
+    {
+      "url": "https://ssl.pstatic.net/static/blog/m/img_default.gif",
+      "method": "GET",
+      "status": 200,
+      "resourceType": "image",
+      "failed": false
+    },
+    {
+      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning//common/js/lottie.min-0e23629_https.js",
+      "method": "GET",
+      "status": 200,
+      "resourceType": "script",
+      "failed": false
+    },
+    {
+      "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/gfp-core.js",
       "method": "GET",
       "status": 200,
       "resourceType": "script",
@@ -431,28 +410,14 @@
       "failed": false
     },
     {
-      "url": "https://ssl.pstatic.net/static/blog/m/img_default.gif",
+      "url": "https://blogimgs.pstatic.net/nblog/quickeditor/btn_qk_set.gif",
       "method": "GET",
       "status": 200,
       "resourceType": "image",
-      "failed": false
-    },
-    {
-      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning//lib/prismplayer/prismplayer-pc-se-1.10.1-e26c964_https.css",
-      "method": "GET",
-      "status": 200,
-      "resourceType": "stylesheet",
       "failed": false
     },
     {
       "url": "https://blogimgs.pstatic.net/nblog/quickeditor/btn_what2.gif",
-      "method": "GET",
-      "status": 200,
-      "resourceType": "image",
-      "failed": false
-    },
-    {
-      "url": "https://blogimgs.pstatic.net/nblog/quickeditor/btn_qk_set.gif",
       "method": "GET",
       "status": 200,
       "resourceType": "image",
@@ -466,14 +431,7 @@
       "failed": false
     },
     {
-      "url": "https://ssl.pstatic.net/static/common/btn/btn_confirm2.gif",
-      "method": "GET",
-      "status": 200,
-      "resourceType": "image",
-      "failed": false
-    },
-    {
-      "url": "https://apollo-cdn.pstatic.net/influencer-sdk/influencer-sdk-0.2.1.css",
+      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning//lib/prismplayer/prismplayer-pc-se-1.10.1-e26c964_https.css",
       "method": "GET",
       "status": 200,
       "resourceType": "stylesheet",
@@ -501,6 +459,20 @@
       "failed": false
     },
     {
+      "url": "https://apollo-cdn.pstatic.net/influencer-sdk/influencer-sdk-0.2.1.css",
+      "method": "GET",
+      "status": 200,
+      "resourceType": "stylesheet",
+      "failed": false
+    },
+    {
+      "url": "https://blogimgs.pstatic.net/nblog/mylog/post/btn_download2.gif",
+      "method": "GET",
+      "status": 200,
+      "resourceType": "image",
+      "failed": false
+    },
+    {
       "url": "https://blogimgs.pstatic.net/nblog/mylog/post/btn_cancel3.gif",
       "method": "GET",
       "status": 200,
@@ -508,14 +480,14 @@
       "failed": false
     },
     {
-      "url": "https://blogimgs.pstatic.net/nblog/mylog/post/btn_close5.gif",
+      "url": "https://ssl.pstatic.net/static/common/btn/btn_confirm2.gif",
       "method": "GET",
       "status": 200,
       "resourceType": "image",
       "failed": false
     },
     {
-      "url": "https://blogimgs.pstatic.net/nblog/mylog/post/btn_download2.gif",
+      "url": "https://ssl.pstatic.net/static/blog/sp_pcblog9.svg",
       "method": "GET",
       "status": 200,
       "resourceType": "image",
@@ -543,21 +515,14 @@
       "failed": false
     },
     {
+      "url": "https://blogimgs.pstatic.net/nblog/mylog/post/btn_close5.gif",
+      "method": "GET",
+      "status": 200,
+      "resourceType": "image",
+      "failed": false
+    },
+    {
       "url": "https://blogimgs.pstatic.net/nblog/btn_close_1.gif",
-      "method": "GET",
-      "status": 200,
-      "resourceType": "image",
-      "failed": false
-    },
-    {
-      "url": "https://blogimgs.pstatic.net/nblog/mylog/post/btn_originaldn.gif",
-      "method": "GET",
-      "status": 200,
-      "resourceType": "image",
-      "failed": false
-    },
-    {
-      "url": "https://blogimgs.pstatic.net/nblog/mylog/post/btn_viewexif.gif",
       "method": "GET",
       "status": 200,
       "resourceType": "image",
@@ -571,6 +536,20 @@
       "failed": false
     },
     {
+      "url": "https://blogimgs.pstatic.net/nblog/mylog/post/btn_viewexif.gif",
+      "method": "GET",
+      "status": 200,
+      "resourceType": "image",
+      "failed": false
+    },
+    {
+      "url": "https://blogimgs.pstatic.net/nblog/mylog/post/btn_originaldn.gif",
+      "method": "GET",
+      "status": 200,
+      "resourceType": "image",
+      "failed": false
+    },
+    {
       "url": "https://blogimgs.pstatic.net/nblog/mylog/post/tit_viewexif.gif",
       "method": "GET",
       "status": 200,
@@ -578,7 +557,7 @@
       "failed": false
     },
     {
-      "url": "https://blogimgs.pstatic.net/static/common/popup/btn_close3.gif",
+      "url": "https://blogimgs.pstatic.net/nblog/ico_notice2.gif",
       "method": "GET",
       "status": 200,
       "resourceType": "image",
@@ -592,7 +571,7 @@
       "failed": false
     },
     {
-      "url": "https://blogimgs.pstatic.net/nblog/ico_notice2.gif",
+      "url": "https://blogimgs.pstatic.net/static/common/popup/btn_close3.gif",
       "method": "GET",
       "status": 200,
       "resourceType": "image",
@@ -620,13 +599,6 @@
       "failed": false
     },
     {
-      "url": "https://blogimgs.pstatic.net/imgs/btn_confirm_pop2.gif",
-      "method": "GET",
-      "status": 200,
-      "resourceType": "image",
-      "failed": false
-    },
-    {
       "url": "https://blogimgs.pstatic.net/imgs/btn_cancel_pop2.gif",
       "method": "GET",
       "status": 200,
@@ -634,7 +606,7 @@
       "failed": false
     },
     {
-      "url": "https://blogimgs.pstatic.net/static/ws/btn_close.gif",
+      "url": "https://blogimgs.pstatic.net/imgs/btn_confirm_pop2.gif",
       "method": "GET",
       "status": 200,
       "resourceType": "image",
@@ -648,10 +620,10 @@
       "failed": false
     },
     {
-      "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/gfp-core.js",
+      "url": "https://blogimgs.pstatic.net/static/ws/btn_close.gif",
       "method": "GET",
       "status": 200,
-      "resourceType": "script",
+      "resourceType": "image",
       "failed": false
     },
     {
@@ -659,6 +631,13 @@
       "method": "GET",
       "status": 200,
       "resourceType": "font",
+      "failed": false
+    },
+    {
+      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning/SspAdPost-511951527_https.js",
+      "method": "GET",
+      "status": 200,
+      "resourceType": "script",
       "failed": false
     },
     {
@@ -676,7 +655,14 @@
       "failed": false
     },
     {
-      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning/SspAdPost-511951527_https.js",
+      "url": "https://ssl.pstatic.net/spi/js/release/ko_KR/splugin.js?v=1485484.0",
+      "method": "GET",
+      "status": 200,
+      "resourceType": "script",
+      "failed": false
+    },
+    {
+      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning//common/js/like/reaction.lottie-03755cf_https.js",
       "method": "GET",
       "status": 200,
       "resourceType": "script",
@@ -690,13 +676,6 @@
       "failed": false
     },
     {
-      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning//common/lib/ntm/ntm-blog-web-c326aba_https.js",
-      "method": "GET",
-      "status": 200,
-      "resourceType": "script",
-      "failed": false
-    },
-    {
       "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning/PostBottomCommon-919436922_https.js",
       "method": "GET",
       "status": 200,
@@ -704,21 +683,7 @@
       "failed": false
     },
     {
-      "url": "https://ssl.pstatic.net/spi/js/release/ko_KR/splugin.js?v=1485466.0",
-      "method": "GET",
-      "status": 200,
-      "resourceType": "script",
-      "failed": false
-    },
-    {
-      "url": "https://editor-static.pstatic.net/v/basic/1.76.0/se.viewer.js?v=1.76.0-20260424190054",
-      "method": "GET",
-      "status": 200,
-      "resourceType": "script",
-      "failed": false
-    },
-    {
-      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning//common/js/like/reaction.lottie-03755cf_https.js",
+      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning//common/lib/ntm/ntm-blog-web-c326aba_https.js",
       "method": "GET",
       "status": 200,
       "resourceType": "script",
@@ -739,6 +704,13 @@
       "failed": false
     },
     {
+      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning/LayoutBottomCommon-413627223_https.js",
+      "method": "GET",
+      "status": 200,
+      "resourceType": "script",
+      "failed": false
+    },
+    {
       "url": "https://ssl.pstatic.net/tveta/libs/ssp-video/prod/ssp.web.sdk.js",
       "method": "GET",
       "status": 200,
@@ -753,7 +725,7 @@
       "failed": false
     },
     {
-      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning/LayoutBottomCommon-413627223_https.js",
+      "url": "https://static-like.pstatic.net/js/reaction/dist/reaction.min.js?v=1485484.0",
       "method": "GET",
       "status": 200,
       "resourceType": "script",
@@ -767,14 +739,7 @@
       "failed": false
     },
     {
-      "url": "https://ssl.pstatic.net/static/blog/sp_pcblog9.svg",
-      "method": "GET",
-      "status": 200,
-      "resourceType": "image",
-      "failed": false
-    },
-    {
-      "url": "https://static-like.pstatic.net/js/reaction/dist/reaction.min.js?v=1485466.0",
+      "url": "https://editor-static.pstatic.net/v/basic/1.76.0/se.viewer.js?v=1.76.0-20260424190054",
       "method": "GET",
       "status": 200,
       "resourceType": "script",
@@ -788,14 +753,14 @@
       "failed": false
     },
     {
-      "url": "https://ssl.pstatic.net/static/blog/skin/87/head-skin.png",
+      "url": "https://blogimgs.pstatic.net/nblog/skins/gnb2014/0008_down.png",
       "method": "GET",
       "status": 200,
       "resourceType": "image",
       "failed": false
     },
     {
-      "url": "https://blogimgs.pstatic.net/nblog/skins/gnb2014/0008_down.png",
+      "url": "https://ssl.pstatic.net/static/blog/skin/87/head-skin.png",
       "method": "GET",
       "status": 200,
       "resourceType": "image",
@@ -851,14 +816,14 @@
       "failed": false
     },
     {
-      "url": "https://ssl.pstatic.net/melona/libs/gfp-nac-module/synchronizer.js",
+      "url": "https://ntm.pstatic.net/scripts/ntm_d26044233161.js",
       "method": "GET",
       "status": 200,
       "resourceType": "script",
       "failed": false
     },
     {
-      "url": "https://ntm.pstatic.net/scripts/ntm_d26044233161.js",
+      "url": "https://ssl.pstatic.net/melona/libs/gfp-nac-module/synchronizer.js",
       "method": "GET",
       "status": 200,
       "resourceType": "script",
@@ -869,27 +834,6 @@
       "method": "GET",
       "status": 200,
       "resourceType": "script",
-      "failed": false
-    },
-    {
-      "url": "https://ssl.pstatic.net/static/blog/skin/87/cm-head.png",
-      "method": "GET",
-      "status": 200,
-      "resourceType": "image",
-      "failed": false
-    },
-    {
-      "url": "https://ntm.pstatic.net/ex/nlog-v2.js",
-      "method": "GET",
-      "status": 200,
-      "resourceType": "script",
-      "failed": false
-    },
-    {
-      "url": "https://blogimgs.pstatic.net/nblog/shadow02.png",
-      "method": "GET",
-      "status": 200,
-      "resourceType": "image",
       "failed": false
     },
     {
@@ -907,6 +851,27 @@
       "failed": false
     },
     {
+      "url": "https://blogimgs.pstatic.net/nblog/shadow02.png",
+      "method": "GET",
+      "status": 200,
+      "resourceType": "image",
+      "failed": false
+    },
+    {
+      "url": "https://ssl.pstatic.net/static/blog/skin/87/cm-head.png",
+      "method": "GET",
+      "status": 200,
+      "resourceType": "image",
+      "failed": false
+    },
+    {
+      "url": "https://ntm.pstatic.net/ex/nlog-v2.js",
+      "method": "GET",
+      "status": 304,
+      "resourceType": "script",
+      "failed": true
+    },
+    {
       "url": "https://blog.naver.com/mylog/WidgetListAsync.naver?blogId=onclean24&listNumVisitor=5&isVisitorOpen=false&isBuddyOpen=false&selectCategoryNo=1&skinId=0&skinType=N&isCategoryOpen=true&isEnglish=false&listNumComment=5&areaCode=11B10101&weatherType=0&currencySign=ALL&enableWidgetKeys=profile%2Ccategory%2Cstat%2Crss%2Csearch%2Ctitle%2Cmenu%2Ccontent%2Cgnb%2Cexternalwidget&writingMaterialListType=1&calType=",
       "method": "GET",
       "status": 200,
@@ -921,14 +886,14 @@
       "failed": false
     },
     {
-      "url": "https://blogimgs.pstatic.net/nblog/write_ico.png",
+      "url": "https://blogimgs.pstatic.net/nblog/edit_ico.png",
       "method": "GET",
       "status": 200,
       "resourceType": "image",
       "failed": false
     },
     {
-      "url": "https://blogimgs.pstatic.net/nblog/edit_ico.png",
+      "url": "https://blogimgs.pstatic.net/nblog/write_ico.png",
       "method": "GET",
       "status": 200,
       "resourceType": "image",
@@ -942,21 +907,14 @@
       "failed": false
     },
     {
-      "url": "https://ssl.pstatic.net/static/blog/no_image_161.png",
+      "url": "https://editor-static.pstatic.net/v/basic/1.76.0/se.11.dd259fce.js",
       "method": "GET",
       "status": 200,
-      "resourceType": "image",
+      "resourceType": "script",
       "failed": false
     },
     {
       "url": "https://blogimgs.pstatic.net/blog20/tag/tag_edit.gif",
-      "method": "GET",
-      "status": 200,
-      "resourceType": "image",
-      "failed": false
-    },
-    {
-      "url": "https://blogimgs.pstatic.net/nblog/mylog/block/btn_rst_clse.gif",
       "method": "GET",
       "status": 200,
       "resourceType": "image",
@@ -970,6 +928,13 @@
       "failed": false
     },
     {
+      "url": "https://blogimgs.pstatic.net/nblog/mylog/block/btn_rst_clse.gif",
+      "method": "GET",
+      "status": 200,
+      "resourceType": "image",
+      "failed": false
+    },
+    {
       "url": "https://blogimgs.pstatic.net/nblog/ico_new.gif",
       "method": "GET",
       "status": 200,
@@ -977,17 +942,10 @@
       "failed": false
     },
     {
-      "url": "https://scv-blog.io.naver.com/jackpotlog/v1/logs",
-      "method": "POST",
-      "status": 200,
-      "resourceType": "xhr",
-      "failed": false
-    },
-    {
-      "url": "https://editor-static.pstatic.net/v/basic/1.76.0/se.11.dd259fce.js",
+      "url": "https://ssl.pstatic.net/static/blog/no_image_161.png",
       "method": "GET",
       "status": 200,
-      "resourceType": "script",
+      "resourceType": "image",
       "failed": false
     },
     {
@@ -1005,17 +963,10 @@
       "failed": false
     },
     {
-      "url": "https://blogimgs.pstatic.net/imgs/icon_set.gif",
+      "url": "https://static-like.pstatic.net/static20260605185222/js/reaction/dist/reaction.basic.js",
       "method": "GET",
       "status": 200,
-      "resourceType": "image",
-      "failed": false
-    },
-    {
-      "url": "https://ssl.pstatic.net/static/common/spi/2026/0317/sp_spi_layer.png",
-      "method": "GET",
-      "status": 200,
-      "resourceType": "image",
+      "resourceType": "script",
       "failed": false
     },
     {
@@ -1026,21 +977,28 @@
       "failed": false
     },
     {
-      "url": "https://static-like.pstatic.net/static20260605185222/js/reaction/dist/reaction.basic.js",
+      "url": "https://ssl.pstatic.net/static/common/spi/2026/0317/sp_spi_layer.png",
       "method": "GET",
       "status": 200,
-      "resourceType": "script",
+      "resourceType": "image",
       "failed": false
     },
     {
-      "url": "https://blog.naver.com/PostViewBottomTitleListAsync.naver?blogId=onclean24&logNo=224329096289&viewDate=&categoryNo=1&parentCategoryNo=&showNextPage=false&showPreviousPage=false&sortDateInMilli=1782559992671&isThumbnailViewType=false&countPerPage=",
+      "url": "https://blog.naver.com/PostViewBottomTitleListAsync.naver?blogId=onclean24&logNo=224329295973&viewDate=&categoryNo=1&parentCategoryNo=&showNextPage=false&showPreviousPage=false&sortDateInMilli=1782581405626&isThumbnailViewType=false&countPerPage=",
       "method": "GET",
       "status": 200,
       "resourceType": "xhr",
       "failed": false
     },
     {
-      "url": "https://blog.naver.com/BlogTagListInfo.naver?blogId=onclean24&logNoList=224329096289&logType=mylog",
+      "url": "https://scv-blog.io.naver.com/jackpotlog/v1/logs",
+      "method": "POST",
+      "status": 200,
+      "resourceType": "xhr",
+      "failed": false
+    },
+    {
+      "url": "https://blog.naver.com/BlogTagListInfo.naver?blogId=onclean24&logNoList=224329295973&logType=mylog",
       "method": "GET",
       "status": 200,
       "resourceType": "xhr",
@@ -1054,13 +1012,6 @@
       "failed": false
     },
     {
-      "url": "https://scv-blog.io.naver.com/jackpotlog/v1/logs",
-      "method": "POST",
-      "status": 200,
-      "resourceType": "xhr",
-      "failed": false
-    },
-    {
       "url": "https://nlog.naver.com/n",
       "method": "POST",
       "status": 204,
@@ -1068,7 +1019,7 @@
       "failed": false
     },
     {
-      "url": "https://nam.veta.naver.com/gfp/v1?u=pc_blog_wrt&xdid=floatingda_content&p=da_dom_id%3Afloatingda_content&an=blog.naver.com&r=https%3A%2F%2Fblog.naver.com%2FPostWriteForm.naver%3FblogId%3Donclean24%26Redirect%3DWrite%26redirect%3DWrite%26widgetTypeCall%3Dtrue%26from%3Dsection%26topReferer%3Dhttps%253A%252F%252Fsection.blog.naver.com%252FBlogHome.naver%253FdirectoryNo%253D0%2526currentPage%253D1%2526groupId%253D0%26trackingCode%3Dblog&c=https%3A%2F%2Fblog.naver.com%2FPostView.naver%3FblogId%3Donclean24%26Redirect%3DView%26logNo%3D224329096289%26categoryNo%3D1%26isAfterWrite%3Dtrue%26isMrblogPost%3Dfalse%26isHappyBeanLeverage%3Dtrue%26contentLength%3D2098&sn=web&sv=3.10.6&nt=0&iv=049417bc-b5b1-46da-83e8-408a5d910a3d&ivt=0&sa=0&rui=2499408657&br=0&sua=%7B%22browsers%22%3A%5B%7B%22brand%22%3A%22HeadlessChrome%22%2C%22version%22%3A%5B%22149%22%2C%220%22%2C%227827%22%2C%2255%22%5D%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%5B%22149%22%2C%220%22%2C%227827%22%2C%2255%22%5D%7D%2C%7B%22brand%22%3A%22Not)A%3BBrand%22%2C%22version%22%3A%5B%2224%22%2C%220%22%2C%220%22%2C%220%22%5D%7D%5D%2C%22platform%22%3A%7B%22brand%22%3A%22Windows%22%2C%22version%22%3A%5B%2210%22%2C%220%22%5D%7D%2C%22mobile%22%3A0%2C%22architecture%22%3A%22x86%22%2C%22bitness%22%3A%2264%22%2C%22model%22%3A%22%22%7D",
+      "url": "https://nam.veta.naver.com/gfp/v1?u=pc_blog_wrt&xdid=floatingda_content&p=da_dom_id%3Afloatingda_content&an=blog.naver.com&r=https%3A%2F%2Fblog.naver.com%2FPostWriteForm.naver%3FblogId%3Donclean24%26Redirect%3DWrite%26redirect%3DWrite%26widgetTypeCall%3Dtrue%26from%3Dsection%26topReferer%3Dhttps%253A%252F%252Fsection.blog.naver.com%252FBlogHome.naver%253FdirectoryNo%253D0%2526currentPage%253D1%2526groupId%253D0%26trackingCode%3Dblog&c=https%3A%2F%2Fblog.naver.com%2FPostView.naver%3FblogId%3Donclean24%26Redirect%3DView%26logNo%3D224329295973%26categoryNo%3D1%26isAfterWrite%3Dtrue%26isMrblogPost%3Dfalse%26isHappyBeanLeverage%3Dtrue%26contentLength%3D4401&sn=web&sv=3.10.6&nt=0&iv=80727bfd-078c-4675-8324-eb61f3bbef40&ivt=0&sa=0&rui=1715374171&br=0&sua=%7B%22browsers%22%3A%5B%7B%22brand%22%3A%22HeadlessChrome%22%2C%22version%22%3A%5B%22149%22%2C%220%22%2C%227827%22%2C%2255%22%5D%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%5B%22149%22%2C%220%22%2C%227827%22%2C%2255%22%5D%7D%2C%7B%22brand%22%3A%22Not)A%3BBrand%22%2C%22version%22%3A%5B%2224%22%2C%220%22%2C%220%22%2C%220%22%5D%7D%5D%2C%22platform%22%3A%7B%22brand%22%3A%22Windows%22%2C%22version%22%3A%5B%2210%22%2C%220%22%5D%7D%2C%22mobile%22%3A0%2C%22architecture%22%3A%22x86%22%2C%22bitness%22%3A%2264%22%2C%22model%22%3A%22%22%7D",
       "method": "GET",
       "status": 200,
       "resourceType": "fetch",
@@ -1089,14 +1040,14 @@
       "failed": false
     },
     {
-      "url": "https://ntm.pstatic.net/ex/nil-1.2.4.js",
+      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning//lib/prismplayer/vodcloud-plugin/vodcloud-config.real-5601565_https.js",
       "method": "GET",
       "status": 200,
       "resourceType": "script",
       "failed": false
     },
     {
-      "url": "https://ssl.pstatic.net/t.static.blog/mylog/versioning//lib/prismplayer/vodcloud-plugin/vodcloud-config.real-5601565_https.js",
+      "url": "https://ntm.pstatic.net/ex/nil-1.2.4.js",
       "method": "GET",
       "status": 200,
       "resourceType": "script",
@@ -1110,10 +1061,10 @@
       "failed": false
     },
     {
-      "url": "https://apis.naver.com/blogserver/like/v1/search/contents?suppress_response_codes=true&pool=blogid&callback=jQuery32105913876679035704_1782559993408&q=BLOG%5Bonclean24_224329096289%5D&isDuplication=false&cssIds=MULTI_PC%2CBLOG_PC&_=1782559993409",
+      "url": "https://ssl.pstatic.net/happyimg2/hbean2/img/pc/layer_icon_cancel.svg",
       "method": "GET",
       "status": 200,
-      "resourceType": "script",
+      "resourceType": "image",
       "failed": false
     },
     {
@@ -1128,6 +1079,13 @@
       "method": "POST",
       "status": 200,
       "resourceType": "xhr",
+      "failed": false
+    },
+    {
+      "url": "https://apis.naver.com/blogserver/like/v1/search/contents?suppress_response_codes=true&pool=blogid&callback=jQuery321016451422225641388_1782581407156&q=BLOG%5Bonclean24_224329295973%5D&isDuplication=false&cssIds=MULTI_PC%2CBLOG_PC&_=1782581407157",
+      "method": "GET",
+      "status": 200,
+      "resourceType": "script",
       "failed": false
     },
     {
@@ -1152,7 +1110,14 @@
       "failed": false
     },
     {
-      "url": "https://tivan.naver.com/g/100_200/osA6F4PjZAcr7NnXYAt_Tmtdt5Tiz-xFQMXC4uPIVSt6F6CpVjGrsBLiF5l6qRDHq____u_SFY6j_YDdlTxzv5a2_glXd-uPN5eo6VrYd98RfGKMw_bhqFwUK3L34FvXdN6wc-MmSwuCljcZXBg02qutK4S5qc3aK5nUNRSXssOeobiHzSMKye_DXqdLzI80YWrWXXh5EIcWq0Nq2-ETbx5wEwPevkSYG3ebZqQMmNL9x9EWaexbxnjmSwywo9S84uIgpEhAhDF-2rFvBZxETG07JozW7CcKKBgDlJNN-bx4CNrX3ZvxeGPx15ZmtHruxTYCnmHfDq9ohjEznKMMAEvoMXLyBV0ZCi2fzdZmZhV4vHu7bG6jMBgHyoGlXYqO7-waMS311tmEAj2lVN25zsP5ElS0PYw3rsN9hPSot-dvVVJ-zje3_Q2_urnWs30gxEnGC6eqZl8jtIWlPS6pWd9eCzKjemi11Yk_zbOwDicmpmptKmtvXo9ixjf2WNUJGl4nQOmHnYjgmobxsTJ0nD7qCN-YUbcIphCQKrbB9UBtReBMYrHaxX5yJTWkVPXklLLcTW5fDibTXPd0ev8APQBLM-V8brwZv1mTjGcwjdAl3IMVaRx1g7_RToYlK-EGkXrchAQhYobkF0UXM6lI6YQtNKQ2gGViABh5seypQ4tQuRh7HNdmIBV8KaDSfMg_r0u18t34_aiN-14pjJeK4e6NRHlpdZdkZomssLTXlEIGuoFpDyA1Iw-uZlbXsRY5FXzDVR7Tdt1UvVwBjotBIy_zm9pd07xOw99n0B1Cyev4NLRx9hSamgpBtuRdbWW1HPZRaiDWAUB0GB0d9b0ia9Y_D379odz3tB3KgEX51odjZmDUm6BaPAOPrnmZzg-R6cXepj5qD3HqoI8CEVisYA/NE",
+      "url": "https://tivan.naver.com/g/100_200/QNoAQXyMzZtvWQKjiLGr8urygdwSaG2I_zZLm1jGWzUS_7cgcGtNM12rfcwo-43_9rExHh612wCxLIKvYucI7rpYHQleHjet8CqM2VHFycErjkd7eXCDHvixeJgjefI63A0WN_0czmTtsKTj-aqHcTZ59AH2CSJpQA24UdTCfPPoe9_dSLk2_Yw9oNeFfT_TXxZ646Mqk1wL-mjKFZDPyHJvY13R5hEYLdyQyf1_tAG47IfR_QZCvpdSdm7FRlkb6_HCPtHqpJAuF9KnJr3zLbVH3juhgxvuIAU3m-SwTcWSt1CHsD6TWsdr1UIHL1QGtsYWGYVd84LJIguXhmhKOsNeOAWhXofh7o5KCmDlmiATmmNwDC4Hw4siJCsH7KPXba6WY6Sy39TZnaEjAM_Q-cH04UW-DHym_Gj_N1bVyzQUNKHzCB1sFl01HrcebPBZOJsw8lM4lX2D8yJ0sg97mxNLd77n7fsc7tYMsw3UvLJuErKqDMtrGYxaV06vk5jK2DYiVTiYV2CRGJokBm8EnoxqpO4Wj9uw8G7hVS0_f1wUJHiEh1pfjvzVap3ftvhgM3oKYW98uK4Tl_yhveGk27TYx-bhq4QyTjNwyJ8jv386vsiPLC7PdHG1yhbzm29iuW6JF2GvENeAn2MMQcazUEWEHUHHImbS5mRTrvYy-FYtMEBGIOXxj0Mvlu6fdDzCK6_nKKlIKrlzYCYfnRKLa7COyNHRHmcfvXba1myODkJyUtuQE5FqBuoYgA0v00HR5IX-0F1e2NcNSsiYjtZ8e2S7lsTt_TezLIy-piJCatm4ThsAeFg5JdOitrL1N255XuItw9CMQDHJu02TyV90IMVv8AGs72NFtlQFdhn1fzmLLEia01aCksuFInkW3lal3M-f5W2xyYUi39ARUlUcDQ/NE",
+      "method": "GET",
+      "status": 200,
+      "resourceType": "image",
+      "failed": false
+    },
+    {
+      "url": "https://blogimgs.pstatic.net/imgs/icon_set.gif",
       "method": "GET",
       "status": 200,
       "resourceType": "image",
@@ -1163,13 +1128,6 @@
       "method": "GET",
       "status": 200,
       "resourceType": "stylesheet",
-      "failed": false
-    },
-    {
-      "url": "https://ssl.pstatic.net/happyimg2/hbean2/img/pc/layer_icon_cancel.svg",
-      "method": "GET",
-      "status": 200,
-      "resourceType": "image",
       "failed": false
     },
     {
