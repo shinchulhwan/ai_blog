@@ -83,13 +83,15 @@ async function extractFromContext(
   const target = frame ?? page;
 
   const data = await target.evaluate(EXTRACT_DOM_SCRIPT);
+  const safeData =
+    data && typeof data === "object" ? data : {};
 
   return {
     source,
     frameUrl: frame?.url() ?? page.url(),
     pageUrl: page.url(),
-    ...data,
-  };
+    ...safeData,
+  } as DomExtractionResult;
 }
 
 export async function saveSmartEditorDomArtifacts(page: Page): Promise<string[]> {
