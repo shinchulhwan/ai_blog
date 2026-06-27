@@ -1,0 +1,330 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+enum ProjectStatus {
+  ACTIVE
+  ARCHIVED
+}
+
+/// AI 블로그 프로젝트 — Prompt / History / Workflow / Publishing / Schedule / Knowledge 단위
+model Project {
+  id             String        @id @default(cuid())
+  name           String
+  description    String        @default("")
+  targetAudience String        @default("")
+  language       String        @default("ko")
+  country        String        @default("KR")
+  status         ProjectStatus @default(ACTIVE)
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+
+  keywords     Keyword[]
+  histories    BlogHistory[]
+  jobs         GenerationJob[]
+  schedules    Schedule[]
+  researches   Research[]
+  decisions    Decision[]
+  workflowRuns WorkflowRun[]
+  prompts      ProjectPrompt[]
+  knowledge    ProjectKnowledge[]
+
+  @@index([status])
+  @@index([name])
+  @@index([createdAt])
+}
+
+model ProjectPrompt {
+  id                 String   @id @default(cuid())
+  projectId          String
+  project            Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  name               String
+  description        String   @default("")
+  systemInstructions String
+  userTemplate       String
+  isDefault          Boolean  @default(false)
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+
+  @@index([projectId])
+}
+
+model ProjectKnowledge {
+  id        String   @id @default(cuid())
+  projectId String
+  project   Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  title     String
+  content   String
+  category  String   @default("general")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([projectId])
+}
+
+/// 키워드 자동 관리 — 프로젝트 단위
+model Keyword {
+  id              String        @id @default(cuid())
+  projectId       String
+  project         Project       @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  keyword         String
+  category        String        @default("일반")
+  status          KeywordStatus @default(PENDING)
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+  lastGeneratedAt DateTime?
+  scheduledAt     DateTime?
+  priority        Int           @default(0)
+  retryCount      Int           @default(0)
+  lastError       String?
+
+  @@index([projectId])
+  @@index([status])
+  @@index([scheduledAt])
+  @@index([priority])
+  @@index([category])
+  @@index([keyword])
+}
+
+enum KeywordStatus {
+  PENDING
+  COMPLETED
+  FAILED
+}
+
+/// 블로그 생성 이력 — 프로젝트 단위
+model BlogHistory {
+  id              String            @id @default(cuid())
+  projectId       String
+  project         Project           @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  keyword         String
+  selectedTitle   String
+  content         String
+  metaDescription String
+  hashtags        String
+  faq             String
+  imagePrompt     String
+  imageAssets     String?
+  seoScore        Int
+  status          BlogHistoryStatus @default(CREATED)
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @updatedAt
+  publishedAt     DateTime?
+  naverPostId     String?
+  publishUrl      String?
+  publishError    String?
+
+  @@index([projectId])
+  @@index([keyword])
+  @@index([status])
+  @@index([createdAt])
+  @@index([selectedTitle])
+}
+
+enum BlogHistoryStatus {
+  CREATED
+  READY
+  PUBLISHING
+  PUBLISHED
+  FAILED
+}
+
+/// AI 자동화 생성 작업 — 프로젝트 단위
+model GenerationJob {
+  id               String    @id @default(cuid())
+  projectId        String
+  project          Project   @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  keyword          String
+  status           JobStatus @default(PENDING)
+  progress         Int       @default(0)
+  startedAt        DateTime?
+  finishedAt       DateTime?
+  errorMessage     String?
+  blogHistoryId    String?
+  researchId       String?
+  currentStepLabel String?
+  retryCount       Int       @default(0)
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+  imageJobId       String?
+  naverUploadJobId String?
+  scheduleId       String?
+
+  @@index([projectId])
+  @@index([status])
+  @@index([keyword])
+  @@index([blogHistoryId])
+  @@index([researchId])
+  @@index([scheduleId])
+  @@index([createdAt])
+}
+
+enum DecisionVerdict {
+  GO
+  REVIEW
+  SKIP
+}
+
+model Decision {
+  id            String          @id @default(cuid())
+  projectId     String
+  project       Project         @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  keyword       String
+  jobId         String?
+  researchId    String?
+  verdict       DecisionVerdict
+  verdictReason String
+  analysis      String
+  createdAt     DateTime        @default(now())
+
+  @@index([projectId])
+  @@index([keyword])
+  @@index([jobId])
+  @@index([verdict])
+  @@index([createdAt])
+}
+
+enum WorkflowRunStatus {
+  RUNNING
+  COMPLETED
+  FAILED
+}
+
+enum WorkflowStepStatus {
+  RUNNING
+  COMPLETED
+  FAILED
+}
+
+model WorkflowRun {
+  id           String            @id @default(cuid())
+  projectId    String
+  project      Project           @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  jobId        String
+  workflowId   String
+  keyword      String
+  status       WorkflowRunStatus @default(RUNNING)
+  startedAt    DateTime          @default(now())
+  finishedAt   DateTime?
+  errorMessage String?
+
+  steps WorkflowStepLog[]
+
+  @@index([projectId])
+  @@index([jobId])
+  @@index([status])
+  @@index([startedAt])
+}
+
+model WorkflowStepLog {
+  id           String             @id @default(cuid())
+  runId        String
+  run          WorkflowRun        @relation(fields: [runId], references: [id], onDelete: Cascade)
+  stepId       String
+  stepLabel    String
+  status       WorkflowStepStatus @default(RUNNING)
+  attempt      Int                @default(1)
+  startedAt    DateTime           @default(now())
+  finishedAt   DateTime?
+  errorMessage String?
+  durationMs   Int?
+
+  @@index([runId])
+  @@index([stepId])
+  @@index([startedAt])
+}
+
+enum JobStatus {
+  PENDING
+  GENERATING
+  GENERATING_IMAGES
+  COMPLETED
+  FAILED
+}
+
+enum ScheduleRecurrence {
+  ONCE
+  DAILY
+  WEEKLY
+  MONTHLY
+  CUSTOM
+}
+
+enum ScheduleStatus {
+  ACTIVE
+  PAUSED
+  PROCESSING
+  COMPLETED
+  FAILED
+}
+
+enum ScheduleRunStatus {
+  RUNNING
+  COMPLETED
+  FAILED
+}
+
+model Schedule {
+  id                    String             @id @default(cuid())
+  projectId             String
+  project               Project            @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  title                 String
+  keyword               String
+  prompt                String             @default("")
+  scheduledAt           DateTime
+  recurrence            ScheduleRecurrence @default(ONCE)
+  customIntervalMinutes Int?
+  status                ScheduleStatus     @default(ACTIVE)
+  lastRunAt             DateTime?
+  lastJobId             String?
+  lastHistoryId         String?
+  lastError             String?
+  runCount              Int                @default(0)
+  createdAt             DateTime           @default(now())
+  updatedAt             DateTime           @updatedAt
+
+  runs ScheduleRun[]
+
+  @@index([projectId])
+  @@index([status])
+  @@index([scheduledAt])
+  @@index([keyword])
+  @@index([createdAt])
+}
+
+model ScheduleRun {
+  id           String            @id @default(cuid())
+  scheduleId   String
+  schedule     Schedule          @relation(fields: [scheduleId], references: [id], onDelete: Cascade)
+  jobId        String?
+  historyId    String?
+  status       ScheduleRunStatus @default(RUNNING)
+  startedAt    DateTime          @default(now())
+  finishedAt   DateTime?
+  errorMessage String?
+
+  @@index([scheduleId])
+  @@index([status])
+  @@index([startedAt])
+}
+
+model Research {
+  id              String   @id @default(cuid())
+  projectId       String
+  project         Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  keyword         String
+  intent          String
+  relatedKeywords String
+  questions       String
+  outline         String
+  createdAt       DateTime @default(now())
+
+  @@index([projectId])
+  @@index([keyword])
+  @@index([createdAt])
+}

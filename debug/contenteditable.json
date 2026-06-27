@@ -1,0 +1,21 @@
+{
+  "source": "mainFrame",
+  "frameUrl": "https://blog.naver.com/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&from=section&topReferer=https%3A%2F%2Fsection.blog.naver.com%2FBlogHome.naver%3FdirectoryNo%3D0%26currentPage%3D1%26groupId%3D0&trackingCode=blog_sectionhome_pc&directAccess=false",
+  "pageUrl": "https://blog.naver.com/onclean24?Redirect=Write&",
+  "count": 1,
+  "elements": [
+    {
+      "tag": "div",
+      "id": null,
+      "className": "",
+      "contentEditable": "true",
+      "role": null,
+      "type": null,
+      "name": null,
+      "placeholder": null,
+      "dataPlaceholder": null,
+      "textPreview": "",
+      "outerHTMLPreview": "<div contenteditable=\"true\" tabindex=\"-1\" aria-hidden=\"true\" allow=\"clipboard-read\" style=\"position: fixed; top: 0px; left: -9999px; width: 17px; height: 100%; border: 0px; display: block;\"></div>"
+    }
+  ]
+}

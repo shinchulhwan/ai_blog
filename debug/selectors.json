@@ -1,0 +1,1086 @@
+{
+  "url": "https://blog.naver.com/onclean24?Redirect=Write&",
+  "title": "onclean24님의 블로그 : 네이버 블로그",
+  "selectorCandidates": [
+    {
+      "frameIndex": 0,
+      "frameUrl": "https://blog.naver.com/onclean24?Redirect=Write&",
+      "selector": "#mainFrame"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "#se-editor-launcher"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "#root"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.blog_seone_wrap__C5hlm"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.header__Ceaap"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "h1.logo__xEaPN"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "a.link_naver__EDYT3"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "span.blind"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "a.link_blog__Xvski"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.header_menu__UJgdY"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "span.autosave_message__PgBf8"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.reserve_btn_area__DcnEe"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.reserve_btn__Km5Xh"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "strong.num__EciI3"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.save_btn_area__Qo0W7"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.save_btn__bzc5B"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "span.text__bK4MD"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.save_count_btn__ZTLNa"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.publish_btn_area__KjA2i"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.publish_btn__m9KHH"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "span.text__d09H7"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "i.icon_wrap__VHKFf"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "svg.icon__X_qrd"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.overflow_menu_btn_area__H01D4"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.overflow_menu_btn__AzKxF"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "i.icon_btnmore__pAr9y"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "svg.icon__GTvxe"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.layer_overflowmenu__ru14P"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "ul.menu_overflowmenu__r5BdC"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.item__DACiU"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "a.link__VwXBi"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.layer_popup__WjlfW"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.dimmed__ypU4_"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.container__HW_tc"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.blog_editor"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "#SE-65a5d23f-cef2-4966-86fb-b275cd03604e"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.se-wrap.se-dnd-wrap"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.se-dnd-wrap"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "header.se-header.se-header-type-basic"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.se-header-inbox.se-l-document-toolbar"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "ul.se-toolbar.se-document-toolbar"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-image"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-image-toolbar-button.se-document-toolbar-basic-button.se-text-icon-toolbar-button"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "span.se-toolbar-icon"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "span.se-toolbar-label"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "span.se-toolbar-tooltip"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-social-media-image"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-social-media-image-toolbar-button.se-document-toolbar-basic-button.se-text-icon-toolbar-button"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-video"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-video-toolbar-button.se-document-toolbar-basic-button.se-text-icon-toolbar-button"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-sticker"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-sticker-toolbar-button.se-document-toolbar-toggle-button.se-text-icon-toolbar-button"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-insert-quotation"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.__se-sentry.se-document-toolbar-icon-select-container.__select-container"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-document-toolbar-icon-select-button.se-insert-quotation-default-toolbar-button.se-text-icon-toolbar-button"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-document-toolbar-select-option-button.se-text-icon-toolbar-select-option-button.__se-sentry"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-insert-horizontal-line"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-document-toolbar-icon-select-button.se-insert-horizontal-line-default-toolbar-button.se-text-icon-toolbar-button"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-oglink"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-oglink-toolbar-button.se-document-toolbar-basic-button.se-text-icon-toolbar-button"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-file"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-file-toolbar-button.se-document-toolbar-basic-button.se-text-icon-toolbar-button"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-schedule"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-schedule-toolbar-button.se-document-toolbar-basic-button.se-text-icon-toolbar-button"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-code"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-code-toolbar-button.se-document-toolbar-basic-button.se-text-icon-toolbar-button"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-table"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-table-toolbar-button.se-document-toolbar-basic-button.se-text-icon-toolbar-button"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-formula"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-formula-toolbar-button.se-document-toolbar-basic-button.se-text-icon-toolbar-button"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-separator-bar-with-line"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.se-separator-bar-button.se-toolbar-button-separator-bar-with-line"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-map"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-map-toolbar-button.se-document-toolbar-basic-button.se-text-icon-toolbar-button"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-additional-button"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-not-sponsored-button-toolbar-button.se-document-toolbar-custom-button.se-text-icon-toolbar-button"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "span.se-toolbar-custom-icon"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-search"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-search-toolbar-button.se-document-toolbar-toggle-button.se-text-icon-toolbar-button"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-separator-bar"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.se-separator-bar-button.se-toolbar-button-separator-bar"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-moment"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-moment-toolbar-button.se-document-toolbar-toggle-button.se-text-icon-toolbar-button"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-library"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-library-toolbar-button.se-document-toolbar-toggle-button.se-text-icon-toolbar-button"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-template"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-template-toolbar-button.se-document-toolbar-toggle-button.se-text-icon-toolbar-button"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.se-header-inbox.se-l-property-toolbar"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "ul.se-toolbar.se-property-toolbar.se-property-toolbar-text"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-text-format"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.se-property-toolbar-label-select-container.__select-container"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-text-format-toolbar-button.se-property-toolbar-label-select-button.__se-sentry"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-font-family"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-font-family-toolbar-button.se-property-toolbar-label-select-button.__se-sentry"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-font-size-code"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-font-size-code-toolbar-button.se-property-toolbar-label-select-button.__se-sentry"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-bold"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-bold-toolbar-button.se-property-toolbar-toggle-button.__se-sentry"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "span.se-blind"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-italic"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-italic-toolbar-button.se-property-toolbar-toggle-button.__se-sentry"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-underline"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-underline-toolbar-button.se-property-toolbar-toggle-button.__se-sentry"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-strikethrough"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-strikethrough-toolbar-button.se-property-toolbar-toggle-button.se-is-selected"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-font-color"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.se-property-color-picker-container.__select-container"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-property-toolbar-color-picker-button.se-font-color-toolbar-button.__se-sentry"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "span.se-toolbar-color-picker-icon"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "span.se-toolbar-icon-font-color"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "span.se-font-color-indicator"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-background-color"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-property-toolbar-color-picker-button.se-background-color-toolbar-button.__se-sentry"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "span.se-background-color-indicator.se-is-white-color"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "span.se-toolbar-icon-background-color"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-align"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.se-property-toolbar-drop-down-container.__select-container"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-property-toolbar-drop-down-button.se-align-left-toolbar-button.__se-sentry"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-line-height"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-property-toolbar-drop-down-button.se-line-height-toolbar-button.__se-sentry"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-list"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-property-toolbar-drop-down-button.se-list-bullet-toolbar-button.__se-sentry"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-drop-cap"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-drop-cap-toolbar-button.se-property-toolbar-toggle-button.__se-sentry"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-superscript"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-superscript-toolbar-button.se-property-toolbar-toggle-button.__se-sentry"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-subscript"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-subscript-toolbar-button.se-property-toolbar-toggle-button.__se-sentry"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-special-letter"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-special-letter-toolbar-button.se-property-toolbar-basic-button.__se-sentry"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-link"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.se-property-toolbar-custom-layer-container.__select-container"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-link-toolbar-button.se-property-toolbar-custom-layer-button.__se-sentry"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-translation"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-translation-toolbar-button.se-property-toolbar-basic-button.__se-sentry"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-toolbar-item.se-toolbar-item-speller"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-speller-toolbar-button.se-property-toolbar-basic-button.__se-sentry"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.se-progressbar"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.se-container"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "#drag-ghost"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.se-content.__se-scroll-target"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "section.se-canvas.se-canvas-width-886.se-l-viewport-tablet"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.se-content-guide"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.se-selection"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "svg.se-caret.se-caret-drop"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.se-caret"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "span.se-caret-ai-icon"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "svg.se-caret.se-is-caret-blinking"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "svg.se-selection-block"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "article.se-components-wrap"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "#SE-83960333-2b9e-4ddf-8c1b-8bd90e8a514b"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.se-component-content"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.se-section.se-section-documentTitle.se-l-default"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "#SE-b68e64e0-7d9d-4c51-bf63-acebd0262d9f"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "#SE-db181f6f-4f48-45d7-b6c0-6301280461db"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "#SE-f40dd3e5-c873-4e9c-8213-63778c6e3921"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "span.se-placeholder.__se_placeholder.se-ff-nanumgothic"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.se-cover-button-wrap"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.se-cover-attach-button-container"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "span.se-cover-button.se-cover-button-local-image-upload"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "span.se-cover-button.se-cover-button-sns-image-upload"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.se-cover-edit-button-container"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "span.se-cover-button.se-cover-button-set-position"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "span.se-cover-button-label"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "span.se-cover-button.se-cover-button-del-image"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.se-cover-moving-button-container"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "span.se-cover-button.se-cover-button-discard-position"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "span.se-cover-button.se-cover-button-confirm-position"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "#SE-886654f5-36df-4535-af96-9732a5d2aa49"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.se-drop-indicator"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.se-section.se-section-text.se-l-default"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "#SE-b651e447-804f-42e6-9175-57798afe9448"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "#SE-30248398-ddf6-4650-9070-9b9cf1bba954"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "#SE-4118cd07-80d0-498a-8b4f-b5d9994ebffe"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.se-canvas-bottom"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-canvas-bottom-button.__edge-area"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.se-insert-menu"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "div.se-insert-point-marker-button"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "span.se-insert-point-marker-icon"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "ul.se-insert-menu-panel"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-insert-menu-item.se-insert-menu-item-image"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-insert-menu-button.se-insert-menu-button-image"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "span.se-insert-menu-button-label"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-insert-menu-item.se-insert-menu-item-sticker"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-insert-menu-button.se-insert-menu-button-sticker"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-insert-menu-item.se-insert-menu-item-horizontalLine"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-insert-menu-button.se-insert-menu-button-horizontalLine"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "ul.se-insert-menu-sub-panel.se-insert-menu-sub-panel-horizontalLine"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-insert-menu-sub-panel-item"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-insert-menu-sub-panel-button.se-insert-menu-sub-panel-button-horizontalLine-default"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-insert-menu-sub-panel-button.se-insert-menu-sub-panel-button-horizontalLine-line1"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-insert-menu-sub-panel-button.se-insert-menu-sub-panel-button-horizontalLine-line2"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-insert-menu-sub-panel-button.se-insert-menu-sub-panel-button-horizontalLine-line3"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-insert-menu-sub-panel-button.se-insert-menu-sub-panel-button-horizontalLine-line4"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-insert-menu-sub-panel-button.se-insert-menu-sub-panel-button-horizontalLine-line5"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-insert-menu-sub-panel-button.se-insert-menu-sub-panel-button-horizontalLine-line6"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-insert-menu-sub-panel-button.se-insert-menu-sub-panel-button-horizontalLine-line7"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "li.se-insert-menu-item.se-insert-menu-item-quotation"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "button.se-insert-menu-button.se-insert-menu-button-quotation"
+    },
+    {
+      "frameIndex": 1,
+      "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+      "selector": "ul.se-insert-menu-sub-panel.se-insert-menu-sub-panel-quotation"
+    }
+  ],
+  "editorSelectors": {
+    "title": [
+      {
+        "priority": 1,
+        "selector": "#SE-83960333-2b9e-4ddf-8c1b-8bd90e8a514b[data-a11y-title=\"제목\"]",
+        "frameIndex": 1,
+        "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+        "reason": "data-a11y-title=제목"
+      },
+      {
+        "priority": 2,
+        "selector": "div.se-section.se-section-documentTitle.se-l-default",
+        "frameIndex": 1,
+        "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+        "reason": "제목 섹션"
+      }
+    ],
+    "content": [
+      {
+        "priority": 2,
+        "selector": "html > body:nth-of-type(1) > div:nth-of-type(2)",
+        "frameIndex": 1,
+        "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+        "reason": "contenteditable 본문 영역"
+      },
+      {
+        "priority": 3,
+        "selector": "div.se-section.se-section-text.se-l-default",
+        "frameIndex": 1,
+        "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+        "reason": "본문 텍스트 섹션"
+      },
+      {
+        "priority": 6,
+        "selector": "div.se-component-content",
+        "frameIndex": 1,
+        "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+        "reason": "컴포넌트 콘텐츠"
+      }
+    ],
+    "publish": [
+      {
+        "priority": 1,
+        "selector": "button.publish_btn__m9KHH",
+        "frameIndex": 1,
+        "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+        "reason": "발행 버튼 (text=\"발행\")"
+      },
+      {
+        "priority": 1,
+        "selector": "button.publish_btn__m9KHH[data-click-area=\"tpb.publish\"]",
+        "frameIndex": 1,
+        "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+        "reason": "data-click-area=tpb.publish"
+      },
+      {
+        "priority": 2,
+        "selector": "button.reserve_btn__Km5Xh",
+        "frameIndex": 1,
+        "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+        "reason": "발행 버튼 (text=\"예약 발행 0건\")"
+      }
+    ],
+    "tempSave": [
+      {
+        "priority": 1,
+        "selector": "button.save_btn__bzc5B",
+        "frameIndex": 1,
+        "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+        "reason": "저장"
+      },
+      {
+        "priority": 2,
+        "selector": "button.save_count_btn__ZTLNa",
+        "frameIndex": 1,
+        "frameUrl": "/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+        "reason": "임시저장된 글 보기, 1개"
+      }
+    ]
+  }
+}

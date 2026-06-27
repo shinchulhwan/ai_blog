@@ -1,0 +1,8 @@
+[warning] setPolicyInfo {versionInfo: Object, sdkInfo: Object, sentryInfo: Object}
+[debug] true
+[error] Access to font at 'https://ssl.pstatic.net/static/blog/font/nanumbarungothic-blod.woff2' from origin 'https://blog.naver.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+[error] Failed to load resource: net::ERR_FAILED
+[error] Access to font at 'https://ssl.pstatic.net/static/blog/font/nanumbarungothic-blod.woff' from origin 'https://blog.naver.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+[error] Failed to load resource: net::ERR_FAILED
+[error] Access to font at 'https://ssl.pstatic.net/static/blog/font/nanumbarungothic-blod.ttf' from origin 'https://blog.naver.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+[error] Failed to load resource: net::ERR_FAILED

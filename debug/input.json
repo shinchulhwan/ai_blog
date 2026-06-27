@@ -1,0 +1,21 @@
+{
+  "source": "mainFrame",
+  "frameUrl": "https://blog.naver.com/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&from=section&topReferer=https%3A%2F%2Fsection.blog.naver.com%2FBlogHome.naver%3FdirectoryNo%3D0%26currentPage%3D1%26groupId%3D0&trackingCode=blog_sectionhome_pc&directAccess=false",
+  "pageUrl": "https://blog.naver.com/onclean24?Redirect=Write&",
+  "count": 1,
+  "elements": [
+    {
+      "tag": "input",
+      "id": null,
+      "className": "se-floating-search-input-search",
+      "contentEditable": null,
+      "role": null,
+      "type": "text",
+      "name": "material-search",
+      "placeholder": "글감을 검색해 보세요.",
+      "dataPlaceholder": null,
+      "textPreview": "",
+      "outerHTMLPreview": "<input type=\"text\" name=\"material-search\" class=\"se-floating-search-input-search\" placeholder=\"글감을 검색해 보세요.\" aria-label=\"글감을 검색해 보세요.\" autocomplete=\"off\" value=\"\">"
+    }
+  ]
+}

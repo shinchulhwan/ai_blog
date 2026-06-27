@@ -1,0 +1,1 @@
+-- BlogHistoryStatus: CREATED | READY | PUBLISHED | FAILED (SQLite stores as TEXT)

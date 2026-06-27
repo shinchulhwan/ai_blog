@@ -1,0 +1,18 @@
+{
+  "source": "mainFrame",
+  "frameUrl": "https://blog.naver.com/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&from=section&topReferer=https%3A%2F%2Fsection.blog.naver.com%2FBlogHome.naver%3FdirectoryNo%3D0%26currentPage%3D1%26groupId%3D0&trackingCode=blog_sectionhome_pc&directAccess=false",
+  "pageUrl": "https://blog.naver.com/onclean24?Redirect=Write&",
+  "activeElement": {
+    "tag": "iframe",
+    "id": "input_buffer1782554592177",
+    "className": "",
+    "contentEditable": null,
+    "role": null,
+    "type": null,
+    "name": null,
+    "placeholder": null,
+    "dataPlaceholder": null,
+    "textPreview": "",
+    "outerHTMLPreview": "<iframe id=\"input_buffer1782554592177\" tabindex=\"-1\" title=\" 스마트 에디터, 접근성 도움말은 alt + 0 \" style=\"position: fixed; top: 371px; left: 197px; width: 50%; height: 1px; border: 0px; z-index: -9999;\"></iframe>"
+  }
+}

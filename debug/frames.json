@@ -1,0 +1,26 @@
+[
+  {
+    "index": 0,
+    "name": "",
+    "url": "https://blog.naver.com/onclean24?Redirect=Write&",
+    "parentIndex": null
+  },
+  {
+    "index": 1,
+    "name": "mainFrame",
+    "url": "https://blog.naver.com/PostWriteForm.naver?blogId=onclean24&Redirect=Write&redirect=Write&widgetTypeCall=true&noTrackingCode=true&directAccess=false",
+    "parentIndex": 0
+  },
+  {
+    "index": 2,
+    "name": "input_buffer1782508414399",
+    "url": "about:blank",
+    "parentIndex": 1
+  },
+  {
+    "index": 3,
+    "name": "ncaptcha-iframe-pv8ca5",
+    "url": "https://wtm.pstatic.net/fce46da/iframe.html",
+    "parentIndex": 1
+  }
+]

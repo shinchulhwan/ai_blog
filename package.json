@@ -4,24 +4,46 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "prisma generate && next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test:integration": "tsx scripts/run-integration-test.ts",
+    "test:e2e": "tsx scripts/run-e2e-workflow-test.ts",
+    "test:openai": "tsx scripts/run-openai-integration-test.ts",
+    "test:openai-image": "tsx scripts/run-openai-image-integration-test.ts",
+    "test:naver-login": "tsx scripts/run-naver-login-test.ts",
+    "test:naver-editor": "tsx scripts/run-naver-editor-test.ts",
+    "test:naver-editor-input": "tsx scripts/run-naver-editor-input-test.ts",
+    "test:naver-publish": "tsx scripts/run-naver-publish-test.ts",
+    "test:naver-inspector": "tsx scripts/run-naver-live-inspector.ts",
+    "test:naver-editor-dom": "tsx scripts/run-smart-editor-dom-inspector.ts",
+    "test:production-ready": "tsx scripts/run-production-ready-test.ts",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:push": "prisma db push",
+    "naver:browser": "playwright install chromium",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
+    "@prisma/client": "^6.19.3",
+    "next": "15.5.19",
+    "openai": "^6.45.0",
+    "playwright": "^1.61.1",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "next": "15.5.19"
+    "zod": "^4.4.3"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.5.19",
-    "@eslint/eslintrc": "^3"
+    "prisma": "^6.19.3",
+    "tailwindcss": "^4",
+    "tsx": "^4.22.4",
+    "typescript": "^5"
   }
 }

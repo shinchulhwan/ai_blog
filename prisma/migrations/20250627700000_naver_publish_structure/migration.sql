@@ -1,0 +1,2 @@
+-- BlogHistoryStatus: CREATED | READY | PUBLISHING | PUBLISHED | FAILED
+ALTER TABLE "BlogHistory" ADD COLUMN "imageAssets" TEXT;

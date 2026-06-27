@@ -1,0 +1,4 @@
+원인: [publish-failed] publish-failed
+수정 제안:
+- publishButton / confirmPublishButton 셀렉터를 registry에서 갱신하세요.
+- 발행 패널이 열린 뒤 confirm 버튼을 찾는지 debug/page.png 로 확인하세요.
